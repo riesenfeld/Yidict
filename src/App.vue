@@ -1,21 +1,21 @@
 <template>
   <div id="app">
+    <NavBar />
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
-    <SearchForm />
     <router-view />
   </div>
 </template>
 
 <script>
-import SearchForm from "@/components/SearchForm.vue"
+import NavBar from "@/components/NavBar.vue"
 
 export default {
   name: "App",
   components: {
-    SearchForm,
+    NavBar,
   },
 }
 </script>
@@ -28,6 +28,12 @@ export default {
   border: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-color: rgba(0, 0, 80, 0.9);
+  --shadow-color: rgba(90, 90, 90, 0.5);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

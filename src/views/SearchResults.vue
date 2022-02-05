@@ -1,16 +1,17 @@
 <template>
   <div id="search-results">
-    <!-- <p>Search term: {{ $route.query.term }}</p>
-    <p>Search type: {{ $route.query.type }}</p> -->
+    <SearchForm />
     <ResultCard v-for="(result, index) in searchResults" :key="index" :result="result"></ResultCard>
   </div>
 </template>
 
 <script>
+import SearchForm from "@/components/SearchForm.vue"
 import ResultCard from "@/components/ResultCard.vue"
 export default {
   name: "SearchResults",
   components: {
+    SearchForm,
     ResultCard,
   },
   data() {
@@ -47,7 +48,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #search-results {
   display: flex;
   flex-direction: column;

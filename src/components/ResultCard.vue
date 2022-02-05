@@ -66,7 +66,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #result-card {
   display: grid;
   /* grid-template-columns: repeat(5, 1fr); */
@@ -78,7 +78,7 @@ export default {
   margin-top: 3vh;
 
   background-color: rgb(230, 230, 230);
-  box-shadow: 4px 4px 4px rgba(90, 90, 90, 0.5);
+  box-shadow: 4px 4px 4px var(--shadow-color);
 }
 .result-element {
   display: flex;
