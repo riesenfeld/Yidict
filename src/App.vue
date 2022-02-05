@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div> -->
+    <SearchForm />
+    <router-view />
   </div>
 </template>
+
+<script>
+import SearchForm from "@/components/SearchForm.vue"
+
+export default {
+  name: "App",
+  components: {
+    SearchForm,
+  },
+}
+</script>
 
 <style>
 #app {

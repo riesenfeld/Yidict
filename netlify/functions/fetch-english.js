@@ -4,8 +4,7 @@ const getWordsAtIndex = function (index) {
   return words.map((word) => word[index])
 }
 
-exports.handler = async function (event, context) {
-  console.log(context)
+exports.handler = async function (event) {
   const eventBody = JSON.parse(event.body)
   let result
   if (eventBody.language == "english") {
