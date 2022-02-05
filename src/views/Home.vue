@@ -2,8 +2,8 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <button @click="fetchWords('english')">English Button</button>
-    <button @click="fetchWords('yiddish')">Yiddish Button</button>
+    <!-- <button @click="fetchWords('english')">English Button</button>
+    <button @click="fetchWords('yiddish')">Yiddish Button</button> -->
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="search-results">
-    <p>Search term: {{ $route.query.term }}</p>
-    <p>Search type: {{ $route.query.type }}</p>
+    <!-- <p>Search term: {{ $route.query.term }}</p>
+    <p>Search type: {{ $route.query.type }}</p> -->
     <ResultCard v-for="(result, index) in searchResults" :key="index" :result="result"></ResultCard>
   </div>
 </template>
@@ -49,8 +49,12 @@ export default {
 
 <style>
 #search-results {
-  width: 100%;
-  height: 90vh;
-  background-color: #aaaaaaaa;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  /* background-color: #aaaaaaaa; */
 }
 </style>
