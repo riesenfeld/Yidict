@@ -30,8 +30,8 @@ export default {
   position: absolute;
   top: 10vh;
   right: 0;
+  bottom: 0;
   width: min(100vw, fit-content);
-  height: 90vh;
   z-index: 2;
 }
 .menu-links {
