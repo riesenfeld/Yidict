@@ -1,11 +1,11 @@
 <template>
   <div id="side-bar" :class="{ menu: true, active: menuIsOpen }">
     <div :class="{ 'menu-links': true, active: menuIsOpen }">
-      <router-link to="/" class="router-link">Usage guide</router-link>
-      <router-link to="/" class="router-link">Transliteration table</router-link>
-      <router-link to="/" class="router-link">Grammar tables</router-link>
-      <router-link to="/" class="router-link">About</router-link>
-      <router-link to="/" class="router-link">Contact</router-link>
+      <router-link to="/usage" class="router-link">Usage guide</router-link>
+      <router-link to="/transliteration" class="router-link">Transliteration table</router-link>
+      <router-link to="/grammar" class="router-link">Grammar tables</router-link>
+      <router-link to="/about" class="router-link">About</router-link>
+      <router-link to="/contact" class="router-link">Contact</router-link>
     </div>
   </div>
 </template>

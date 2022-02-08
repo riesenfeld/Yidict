@@ -12,7 +12,7 @@
 import SearchForm from "@/components/SearchForm.vue"
 
 export default {
-  name: "Home",
+  name: "HomePage",
   components: {
     SearchForm,
   },

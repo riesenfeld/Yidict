@@ -1,28 +1,48 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
-import Home from "../views/Home.vue"
-import Search from "../views/SearchResults.vue"
+import HomePage from "../views/HomePage.vue"
+import SearchResultsPage from "../views/SearchResultsPage.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "HomePage",
+    component: HomePage,
   },
   {
     path: "/search",
-    name: "SearchResults",
-    component: Search,
+    name: "SearchResultsPage",
+    component: SearchResultsPage,
   },
   {
     path: "/about",
-    name: "About",
+    name: "AboutPage",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    component: () => import(/* webpackChunkName: "about" */ "../views/AboutPage.vue"),
+  },
+  {
+    path: "/usage",
+    name: "UsageGuidePage",
+    component: () => import("@/views/UsageGuidePage.vue"),
+  },
+  {
+    path: "/transliteration",
+    name: "TransliterationTablePage",
+    component: () => import("@/views/TransliterationTablePage"),
+  },
+  {
+    path: "/grammar",
+    name: "GrammarTablesPage",
+    component: () => import("@/views/GrammarTablesPage"),
+  },
+  {
+    path: "/contact",
+    name: "ContactPage",
+    component: () => import("@/views/ContactPage"),
   },
 ]
 

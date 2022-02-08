@@ -9,7 +9,7 @@
 import SearchForm from "@/components/SearchForm.vue"
 import ResultCard from "@/components/ResultCard.vue"
 export default {
-  name: "SearchResults",
+  name: "SearchResultsPage",
   components: {
     SearchForm,
     ResultCard,
