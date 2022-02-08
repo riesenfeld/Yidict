@@ -1,5 +1,5 @@
 <template>
-  <nav id="nav-bar">
+  <header id="header">
     <router-link to="/" class="router-link router-link-home">
       <div class="logo-area">
         <!-- logo source: https://icons8.com/icon/25546/peacock -->
@@ -10,12 +10,12 @@
     <button class="menu-button" @click="toggleMenu">
       <img src="@/assets/menu.svg" class="menu-icon" alt="menu icon" />
     </button>
-  </nav>
+  </header>
 </template>
 
 <script>
 export default {
-  name: "NavBar",
+  name: "Header",
   props: {
     menuIsOpen: {
       type: Boolean,
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-#nav-bar {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

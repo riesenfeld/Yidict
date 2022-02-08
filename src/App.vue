@@ -1,19 +1,19 @@
 <template>
   <div id="app" v-on="menuIsOpen ? { click: toggleMenu } : {}">
-    <NavBar @menuToggled="toggleMenu" :menuIsOpen="menuIsOpen" />
+    <Header @menuToggled="toggleMenu" :menuIsOpen="menuIsOpen" />
     <SideBar :menuIsOpen="menuIsOpen" />
     <router-view />
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
+import Header from "@/components/Header.vue"
 import SideBar from "@/components/SideBar.vue"
 
 export default {
   name: "App",
   components: {
-    NavBar,
+    Header,
     SideBar,
   },
   data() {
