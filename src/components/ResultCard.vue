@@ -6,7 +6,7 @@
       class="result-element"
       :style="gridItemPosition(index)"
       :aria-label="ariaLabels[index]"
-      :lang="index == 4 ? 'yi' : false"
+      :lang="index == 1 ? 'yi' : false"
     >
       {{ result[index] }}
     </div>
@@ -23,10 +23,10 @@ export default {
     return {
       ariaLabels: [
         "English",
+        "Yiddish",
         "Transliteration",
         "Additional pronunciation information",
         "Part of speech",
-        "Yiddish",
       ],
     }
   },
@@ -44,11 +44,11 @@ export default {
           }
         case 1:
           return {
-            gridRowStart: 2,
-            gridRowEnd: 3,
-            gridColumnStart: 1,
-            gridColumnEnd: 3,
-            borderRight: "1px solid black",
+            gridRowStart: 1,
+            gridRowEnd: 2,
+            gridColumnStart: 4,
+            gridColumnEnd: 7,
+            borderBottom: "1px solid black",
           }
         case 2:
           return {
@@ -67,11 +67,11 @@ export default {
           }
         case 4:
           return {
-            gridRowStart: 1,
-            gridRowEnd: 2,
-            gridColumnStart: 4,
-            gridColumnEnd: 7,
-            borderBottom: "1px solid black",
+            gridRowStart: 2,
+            gridRowEnd: 3,
+            gridColumnStart: 1,
+            gridColumnEnd: 3,
+            borderRight: "1px solid black",
           }
       }
     },
