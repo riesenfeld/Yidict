@@ -2,6 +2,9 @@
   <div id="search-results">
     <SearchForm />
     <ResultCard v-for="(result, index) in searchResults" :key="index" :result="result"></ResultCard>
+    <p v-if="searchResults != null && searchResults.length == 0" class="no-matches-found-message">
+      No matches found
+    </p>
   </div>
 </template>
 
@@ -53,5 +56,8 @@ export default {
   width: 90%;
   margin-left: 5%;
   /* background-color: #aaaaaaaa; */
+}
+.no-matches-found-message {
+  color: red;
 }
 </style>
