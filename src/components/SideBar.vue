@@ -1,5 +1,5 @@
 <template>
-  <div id="side-bar" :class="{ menu: true, active: menuIsOpen }">
+  <nav id="side-bar" :class="{ menu: true, active: menuIsOpen }">
     <div :class="{ 'menu-links': true, active: menuIsOpen }">
       <router-link to="/usage" class="router-link">Usage guide</router-link>
       <router-link to="/transliteration" class="router-link">Transliteration table</router-link>
@@ -7,7 +7,7 @@
       <router-link to="/about" class="router-link">About</router-link>
       <router-link to="/contact" class="router-link">Contact</router-link>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
