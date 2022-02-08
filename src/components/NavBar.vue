@@ -49,10 +49,8 @@ export default {
 
 .logo-area {
   display: flex;
-  /* justify-content: center; */
   align-items: flex-end;
   margin-left: 1vw;
-  /* height: 10vh;  */
   font-size: 5vh;
 }
 .site-name {

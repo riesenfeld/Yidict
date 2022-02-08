@@ -39,10 +39,6 @@ export default {
   watch: {
     $route(to) {
       this.fetchResults(to.query.term, to.query.type)
-      // this.$emit("routeUpdated", {
-      //   term: to.query.term,
-      //   type: to.query.type,
-      // })
     },
   },
 }
