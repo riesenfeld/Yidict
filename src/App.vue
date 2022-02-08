@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
-    <NavBar />
+  <div id="app" v-on="menuIsOpen ? { click: toggleMenu } : {}">
+    <NavBar @menuToggled="toggleMenu" :menuIsOpen="menuIsOpen" />
+    <SideBar :menuIsOpen="menuIsOpen" />
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -11,11 +12,33 @@
 
 <script>
 import NavBar from "@/components/NavBar.vue"
+import SideBar from "@/components/SideBar.vue"
 
 export default {
   name: "App",
   components: {
     NavBar,
+    SideBar,
+  },
+  data() {
+    return {
+      menuIsOpen: false,
+    }
+  },
+  methods: {
+    /**
+     * Toggles the SideBar menu component.
+     * When the sidebar is open, clicking anywhere other than the sidebar
+     *  will cause it to close.
+     * We pass in a default dummy parameter here to handle the case where
+     *  toggleMenu() is called by a custom event (namely, the menu button on the nav),
+     *  which doesn't have an event object associated with it.
+     */
+    toggleMenu(event = { target: { id: "" } }) {
+      if (event.target.id != "side-bar") {
+        this.menuIsOpen = !this.menuIsOpen
+      }
+    },
   },
 }
 </script>
