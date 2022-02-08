@@ -1,10 +1,27 @@
 <template>
-  <div id="usage-guide-page"></div>
+  <div id="usage-guide-page">
+    <ResultCard :result="exampleResult" />
+  </div>
 </template>
 
 <script>
+import ResultCard from "@/components/ResultCard.vue"
 export default {
   name: "UsageGuidePage",
+  components: {
+    ResultCard,
+  },
+  data() {
+    return {
+      exampleResult: [
+        "English",
+        "Transliteration",
+        "Additional pronunciation information",
+        "Part of speech",
+        "Yiddish",
+      ],
+    }
+  },
 }
 </script>
 
