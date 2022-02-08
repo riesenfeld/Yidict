@@ -38,6 +38,8 @@ export default {
   display: none;
 }
 .menu-links.active {
+  position: sticky;
+  top: 12vh; /* top of sidebar + 2vh margin-top */
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
