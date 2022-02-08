@@ -5,6 +5,8 @@
       :key="index"
       class="result-element"
       :style="gridItemPosition(index)"
+      :aria-label="ariaLabels[index]"
+      :lang="index == 4 ? 'yi' : false"
     >
       {{ result[index] }}
     </div>
@@ -16,6 +18,17 @@ export default {
   name: "ResultCard",
   props: {
     result: Array,
+  },
+  data() {
+    return {
+      ariaLabels: [
+        "English",
+        "Transliteration",
+        "Additional pronunciation information",
+        "Part of speech",
+        "Yiddish",
+      ],
+    }
   },
   methods: {
     gridItemPosition(index) {
