@@ -54,24 +54,24 @@ export default {
           return {
             gridRowStart: 2,
             gridRowEnd: 3,
-            gridColumnStart: 3,
-            gridColumnEnd: 5,
+            gridColumnStart: 1,
+            gridColumnEnd: 3,
             borderRight: "1px solid black",
           }
         case 3:
           return {
             gridRowStart: 2,
             gridRowEnd: 3,
-            gridColumnStart: 5,
-            gridColumnEnd: 7,
+            gridColumnStart: 3,
+            gridColumnEnd: 5,
           }
         case 4:
           return {
             gridRowStart: 2,
             gridRowEnd: 3,
-            gridColumnStart: 1,
-            gridColumnEnd: 3,
-            borderRight: "1px solid black",
+            gridColumnStart: 5,
+            gridColumnEnd: 7,
+            borderLeft: "1px solid black",
           }
       }
     },
