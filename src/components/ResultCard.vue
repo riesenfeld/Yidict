@@ -5,6 +5,7 @@
       :key="index"
       class="result-element"
       :style="gridItemPosition(index)"
+      :data-category="dataCategories[index]"
       :aria-label="ariaLabels[index]"
       :lang="index == 1 ? 'yi' : false"
     >
@@ -28,6 +29,7 @@ export default {
         "Additional pronunciation information",
         "Part of speech",
       ],
+      dataCategories: ["english", "yiddish", "transliteration", "pronunciation", "partofspeech"],
     }
   },
   methods: {
@@ -97,6 +99,12 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
+  /* overflow-wrap: anywhere; */
+  hyphens: auto;
+}
+
+.result-element[data-category="pronunciation"] {
+  hyphens: none;
   overflow-wrap: anywhere;
 }
 
