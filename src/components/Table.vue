@@ -3,11 +3,10 @@
     <div
       v-for="(element, index) in flattenedData"
       :key="index"
-      class="table-element"
+      :class="{ 'table-element': true, 'table-header': index < tableData.columnNames.length }"
       :style="tableElementStyles(index)"
-    >
-      {{ element }}
-    </div>
+      v-html="element"
+    ></div>
   </div>
 </template>
 
@@ -39,21 +38,24 @@ export default {
       }
       return styleObject
     },
+    /* Wrap the table's top row in <h3> tags */
+    headerize(arr) {
+      return arr.map((el) => "<h3>" + el + "</h3>")
+    },
   },
   computed: {
     flattenedData() {
-      let arr = []
+      let arr = this.headerize(this.tableData.columnNames)
       for (let i = 0; i < this.tableData.rows.length; i++) {
         arr = arr.concat(this.tableData.rows[i])
       }
       return arr
     },
     gridFromData() {
-      let numRows = this.tableData.rows.length
       let numColumns = this.tableData.columnNames.length
       return {
         display: "grid",
-        gridTemplateRows: `repeat(${numRows}, 1fr)`,
+        gridAutoRows: "min-content",
         gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
       }
     },
@@ -72,7 +74,10 @@ export default {
 .table-element {
   padding: 2px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* .table-header {
+} */
 </style>
