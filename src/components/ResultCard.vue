@@ -1,5 +1,5 @@
 <template>
-  <div id="result-card">
+  <div id="result-card" class="result-card">
     <div
       v-for="(element, index) in result"
       :key="index"
@@ -97,5 +97,12 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
+  overflow-wrap: break-word;
+}
+
+@media (orientation: portrait) {
+  #result-card {
+    width: 90%;
+  }
 }
 </style>
