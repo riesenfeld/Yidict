@@ -99,7 +99,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  /* overflow-wrap: anywhere; */
   hyphens: auto;
 }
 
