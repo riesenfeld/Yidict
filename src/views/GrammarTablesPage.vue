@@ -1,6 +1,18 @@
 <template>
   <div id="grammar-tables-page">
     <div v-if="$route.params.table == 'all'" class="tables-all-or-one">
+      <div class="grammar-tables-nav-header">
+        <h3>Click a link below to scroll down to a table</h3>
+        <span class="tables-all-or-one-link">
+          <span>(</span>
+          <router-link
+            :to="{ name: 'GrammarTablesPage', params: {} }"
+            v-html="'Or click here to select a table individually'"
+          >
+          </router-link>
+          <span>)</span>
+        </span>
+      </div>
       <nav class="grammar-tables-nav">
         <a
           v-for="(table, index) in grammarTables"
@@ -8,9 +20,6 @@
           :href="'#' + table.name"
           v-html="table.table.title"
         ></a>
-        <router-link :to="{ name: 'GrammarTablesPage', params: {} }">
-          View tables individually
-        </router-link>
       </nav>
       <div v-for="(table, index) in grammarTables" :key="index" class="table-area">
         <h3 :id="table.name" class="table-title">{{ table.table.title }}</h3>
@@ -18,6 +27,18 @@
       </div>
     </div>
     <div v-else class="tables-all-or-one">
+      <div class="grammar-tables-nav-header">
+        <h3>Click a link below to view an individual table</h3>
+        <span class="tables-all-or-one-link">
+          <span>(</span>
+          <router-link
+            :to="{ name: 'GrammarTablesPage', params: { table: 'all' } }"
+            v-html="'Or click here to view all tables at once'"
+          >
+          </router-link>
+          <span>)</span>
+        </span>
+      </div>
       <nav class="grammar-tables-nav">
         <router-link
           v-for="(table, index) in grammarTables"
@@ -25,9 +46,6 @@
           :to="{ name: 'GrammarTablesPage', params: { table: table.name } }"
           v-html="table.table.title"
         ></router-link>
-        <router-link :to="{ name: 'GrammarTablesPage', params: { table: 'all' } }">
-          View all tables at once
-        </router-link>
       </nav>
       <div class="table-area">
         <h3 v-if="$route.params.table != undefined" class="table-title">
@@ -39,15 +57,6 @@
         />
       </div>
     </div>
-
-    <!-- <Table :tableData="adjectiveInflections" /> -->
-    <!-- <Table :tableData="possessivePronouns" /> -->
-    <!-- <Table :tableData="definiteArticles" /> -->
-    <!-- <Table :tableData="personalPronouns" /> -->
-    <!-- <Table :tableData="demonstrativeDeterminers" /> -->
-    <!-- <Table :tableData="indefiniteAndRelativePronounsForPeople" /> -->
-    <!-- <Table :tableData="indefiniteAndRelativePronounsForObjects" /> -->
-    <!-- <h2 id="header" name="header">header</h2> -->
   </div>
 </template>
 
@@ -100,11 +109,17 @@ export default {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
+.grammar-tables-nav-header {
+  margin-bottom: 3vh;
+}
 .grammar-tables-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 2vh;
+}
+.tables-all-or-one-link {
+  font-size: 0.8rem;
 }
 .table-area {
   margin-top: 5vh;
@@ -112,9 +127,5 @@ export default {
 }
 .table-title {
   margin-bottom: 3vh;
-}
-.grammar-table {
-  /* margin-top: 5vh;
-  margin-bottom: 5vh; */
 }
 </style>

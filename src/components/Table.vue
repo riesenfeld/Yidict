@@ -19,7 +19,7 @@ export default {
   methods: {
     tableElementStyles(index) {
       let columnPosition = index % this.tableData.columnNames.length
-      let rowPosition = Math.floor(index / this.tableData.rows.length)
+      let rowPosition = Math.floor(index / this.tableData.columnNames.length)
       let borderStyle = "1px solid black"
       let styleObject = {
         borderTop: "none",
