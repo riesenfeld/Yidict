@@ -97,7 +97,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 @media (orientation: portrait) {
