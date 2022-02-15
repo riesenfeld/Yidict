@@ -78,6 +78,7 @@ form {
 }
 .form-flex-item {
   margin-top: 1vh;
+  text-align: left;
 }
 input {
   /* Use UA styles for form elements */
@@ -104,5 +105,11 @@ button:active {
 
 label[for="text-field"] {
   display: none;
+}
+
+@media (orientation: portrait) {
+  form {
+    width: 75vw;
+  }
 }
 </style>
