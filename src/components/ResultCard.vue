@@ -99,11 +99,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  hyphens: auto;
-}
-
-.result-element[data-category="pronunciation"] {
-  hyphens: none;
   overflow-wrap: anywhere;
 }
 
