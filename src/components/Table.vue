@@ -1,5 +1,5 @@
 <template>
-  <div id="table" :style="gridFromData">
+  <div id="table" class="grammar-table" :style="gridFromData">
     <div
       v-for="(element, index) in flattenedData"
       :key="index"
@@ -29,7 +29,7 @@ export default {
       }
 
       /* If in not in the bottom row, put a border at the bottom */
-      if (rowPosition < this.tableData.rows.length - 1) {
+      if (rowPosition < this.tableData.rows.length) {
         styleObject.borderBottom = borderStyle
       }
       /* If not in the rightmost column, put a border on the left */
@@ -38,9 +38,9 @@ export default {
       }
       return styleObject
     },
-    /* Wrap the table's top row in <h3> tags */
+    /* Wrap the table's top row in <h4> tags */
     headerize(arr) {
-      return arr.map((el) => "<h3>" + el + "</h3>")
+      return arr.map((el) => "<h4>" + el + "</h4>")
     },
   },
   computed: {

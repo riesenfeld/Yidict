@@ -35,7 +35,7 @@ const routes = [
     component: () => import("@/views/TransliterationTablePage"),
   },
   {
-    path: "/grammar",
+    path: "/grammar/:table?",
     name: "GrammarTablesPage",
     component: () => import("@/views/GrammarTablesPage"),
   },

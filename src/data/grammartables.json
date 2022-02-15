@@ -1,5 +1,6 @@
 {
   "adjectiveInflections": {
+    "title": "Adjective Inflections",
     "columnNames": ["Dative Case", "Accusative Case", "Nominative Case", "Gender/Number"],
     "rows": [
       [
@@ -35,38 +36,93 @@
     ]
   },
   "possessivePronouns": {
-    "columnNames": [],
-    "rows": []
+    "title": "Possessive Pronouns",
+    "columnNames": [
+      "Interrogative \"whose\" (Yiddish)",
+      "Plural (Yiddish)",
+      "Plural (English)",
+      "Singular (Yiddish)",
+      "Singular (English)"
+    ],
+    "rows": [
+      ["<p>װעמענס</p>", "<p>אונדזער</p>", "<p>our</p>", "<p>מײַן</p>", "<p>my</p>"],
+      ["<p>װעמענס</p>", "<p>אײַער</p>", "<p>your</p>", "<p>דײַן</p>", "<p>your</p>"],
+      ["<p>װעמענס</p>", "<p>זייער</p>", "<p>their</p>", "<p>זײַן</p>", "<p>his</p>"],
+      ["<p>װעמענס</p>", "<p>זייער</p>", "<p>their</p>", "<p>איר</p>", "<p>her</p>"],
+      ["<p>װעמענס</p>", "<p>זייער</p>", "<p>their</p>", "<p>זײַן</p>", "<p>its</p>"]
+    ]
   },
   "definiteArticles": {
-    "columnNames": [],
-    "rows": []
+    "title": "Definite Articles",
+    "columnNames": ["Dative Case", "Accusative Case", "Nominative Case", "Gender/Number"],
+    "rows": [
+      ["<p>דעם</p>", "<p>דעם</p>", "<p>דער</p>", "<p>Singular Masculine</p>"],
+      ["<p>דער</p>", "<p>די</p>", "<p>די</p>", "<p>Singular Feminine</p>"],
+      ["<p>דעם</p>", "<p>דאָס</p>", "<p>דאָס</p>", "<p>Singular Neuter</p>"],
+      ["<p>די</p>", "<p>די</p>", "<p>די</p>", "<p>Plural (all genders)</p>"]
+    ]
   },
   "personalPronouns": {
-    "columnNames": [],
-    "rows": []
-  },
-  "demonstrativeDeterminers": {
-    "columnNames": [],
-    "rows": []
-  },
-  "indefiniteAndRelativePronounsForPeople": {
+    "title": "Personal Pronouns",
     "columnNames": ["Possessive", "Dative", "Accusative", "Nominative", "English"],
     "rows": [
-      ["װער", "װעמען", "װעמען", "װעמענס", "Who/Whom/Whose"],
-      ["עמעצער", "עמעצן", "עמעצן", "עמעצנס", "Someone/Somebody"],
-      ["יעדערער", "יעדערן", "יעדערן", "יעדערנס", "Everyone/Everybody (masculine)"],
-      ["יעדערע", "יעדערע", "יעדערער", "יעדערערס", "Everyone/Everybody (feminine)"],
-      ["קײנער נישט", "קײנעם נישט", "קײנעם נישט", "קײנעמס נישט", "No one/Nobody"]
+      ["<p>מײַן</p>", "<p>מיר</p>", "<p>מיך</p>", "<p>איך</p>", "<p>I</p>"],
+      ["<p>דײַן</p>", "<p>דיר</p>", "<p>דיך</p>", "<p>דו</p>", "<p>You</p>"],
+      ["<p>זײַן</p>", "<p>אים</p>", "<p>אים</p>", "<p>ער</p>", "<p>He</p>"],
+      ["<p>איר</p>", "<p>איר</p>", "<p>זי</p>", "<p>זי</p>", "<p>She</p>"],
+      ["<p>זײַן</p>", "<p>אים</p>", "<p>עס</p>", "<p>עס</p>", "<p>It</p>"],
+      ["<p>אונדזער</p>", "<p>אונדז</p>", "<p>אונדז</p>", "<p>מיר</p>", "<p>We</p>"],
+      ["<p>אײַער</p>", "<p>אײַך</p>", "<p>אײַך</p>", "<p>איר</p>", "<p>You</p>"],
+      ["<p>זײער</p>", "<p>זײ</p>", "<p>זײ</p>", "<p>זײ</p>", "<p>They</p>"]
+    ]
+  },
+  "demonstrativeDeterminers": {
+    "title": "Demonstrative Determiners",
+    "columnNames": ["Possessive", "Dative", "Accusative", "Nominative", "English"],
+    "rows": [
+      ["<p>דעם</p>", "<p>דעם</p>", "<p>דעם</p>", "<p>דער</p>", "<p>This (masculine)</p>"],
+      ["<p>דער</p>", "<p>דער</p>", "<p>די</p>", "<p>די</p>", "<p>This (feminine)</p>"],
+      ["<p>דעם</p>", "<p>דעם</p>", "<p>דאָס</p>", "<p>דאָס</p>", "<p>This (neuter)</p>"],
+      ["<p>די</p>", "<p>די</p>", "<p>די</p>", "<p>די</p>", "<p>These (all genders)</p>"]
+    ]
+  },
+  "indefiniteAndRelativePronounsForPeople": {
+    "title": "Indefinite and Relative Pronouns for People",
+    "columnNames": ["Possessive", "Dative", "Accusative", "Nominative", "English"],
+    "rows": [
+      ["<p>װעמענס</p>", "<p>װעמען</p>", "<p>װעמען</p>", "<p>װער</p>", "<p>Who/Whom/Whose</p>"],
+      ["<p>עמעצנס</p>", "<p>עמעצן</p>", "<p>עמעצן</p>", "<p>עמעצער</p>", "<p>Someone/Somebody</p>"],
+      [
+        "<p>יעדערנס</p>",
+        "<p>יעדערן</p>",
+        "<p>יעדערן</p>",
+        "<p>יעדערער</p>",
+        "<p>Everyone/Everybody (masculine)</p>"
+      ],
+      [
+        "<p>יעדערערס</p>",
+        "<p>יעדערער</p>",
+        "<p>יעדערע</p>",
+        "<p>יעדערע</p>",
+        "<p>Everyone/Everybody (feminine)</p>"
+      ],
+      [
+        "<p>קײנעמס נישט</p>",
+        "<p>קײנעם נישט</p>",
+        "<p>קײנעם נישט</p>",
+        "<p>קײנער נישט</p>",
+        "<p>No one/Nobody</p>"
+      ]
     ]
   },
   "indefiniteAndRelativePronounsForObjects": {
+    "title": "Indefinite and Relative Pronouns for Objects",
     "columnNames": ["Yiddish", "English"],
     "rows": [
-      ["װאָס", "What"],
-      ["עפּעס", "Something"],
-      ["אַלץ", "Everything"],
-      ["גאָרנישט (קײן זאַך נישט)", "Nothing"]
+      ["<p>װאָס</p>", "<p>What</p>"],
+      ["<p>עפּעס</p>", "<p>Something</p>"],
+      ["<p>אַלץ</p>", "<p>Everything</p>"],
+      ["<p>גאָרנישט (קײן זאַך נישט)</p>", "<p>Nothing</p>"]
     ]
   }
 }
