@@ -87,7 +87,8 @@ export default {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(6, 1fr);
 
-  width: 50%;
+  /* width: 50%; */
+  width: min(90%, 500px);
   min-height: 30vh;
   margin-top: 3vh;
 
@@ -102,9 +103,10 @@ export default {
   overflow-wrap: anywhere;
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) and (max-width: 800px) {
   #result-card {
-    width: 90%;
+    /* width: 90%; */
+    font-size: 0.8rem;
   }
 }
 </style>
