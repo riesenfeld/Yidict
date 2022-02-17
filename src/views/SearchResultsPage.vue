@@ -23,10 +23,11 @@ export default {
     }
   },
   methods: {
-    async fetchResults(term, type) {
+    async fetchResults(term, type, isExact) {
       let requestBody = JSON.stringify({
         searchTerm: term,
         searchType: type,
+        exact: isExact,
       })
       let response = await fetch("/.netlify/functions/search", {
         method: "POST",
@@ -37,11 +38,15 @@ export default {
     },
   },
   mounted() {
-    this.fetchResults(this.$route.query.term, this.$route.query.type)
+    if (this.$route.query.exact == undefined || this.$route.query.exact == false) {
+      this.fetchResults(this.$route.query.term, this.$route.query.type, "false")
+    } else this.fetchResults(this.$route.query.term, this.$route.query.type, "true")
   },
   watch: {
     $route(to) {
-      this.fetchResults(to.query.term, to.query.type)
+      if (to.query.exact == undefined || to.query.exact == false) {
+        this.fetchResults(to.query.term, to.query.type, "false")
+      } else this.fetchResults(to.query.term, to.query.type, "true")
     },
   },
 }
