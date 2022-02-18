@@ -5,14 +5,15 @@
       <p>
         The <em>Yidisher Visnshaftlekher Institut</em> (<em lang="yi"
           >ייִדישער װיסנשאַפֿטלעכער אינסטיטוט</em
-        >), called YIVO for short, is the closest thing that the Yiddish language has to a standards
-        body. In that capacity, they have provided a guide for how one should write Yiddish words
+        >), called YIVO for short, is the one of the primary pedagogical institutions of the Yiddish
+        language, and a widely-accepted standards body in the domain of Yiddish-as-a-second-language
+        education. In that capacity, they have provided a guide for how one may write Yiddish words
         using a Latin alphabet. This guide is provided as a table below.
       </p>
       <p>
         Bear in mind that YIVO orthographical standards are not necessarily representative of how
-        Yiddish is written in the real world. At the bottom of this page, you will find a table of
-        common deviations from YIVO-recommended orthography.
+        Yiddish is written (or spoken) in the real world. At the bottom of this page, you will find
+        a table of common deviations from YIVO-recommended orthography.
       </p>
     </section>
     <section class="table-area">
@@ -105,11 +106,13 @@ h3 {
   height: fit-content;
 }
 .table-area >>> .table-data-element {
-  font-size: 1.2rem;
-}
-.split-table-container >>> .table-data-element[data-column="Name"],
-.split-table-container >>> .table-data-element[data-column="Romanization"] {
   font-size: 1rem;
+}
+
+.table-area >>> .table-data-element[data-column="Yiddish"],
+.table-area >>> .table-data-element[data-column="Non-YIVO Character"],
+.table-area >>> .table-data-element[data-column="YIVO Preferred Spelling"] {
+  font-size: 1.5rem;
 }
 
 .alternatives-table-area {
