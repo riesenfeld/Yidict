@@ -101,6 +101,9 @@ export default {
 </script>
 
 <style scoped>
+#grammar-tables-page {
+  min-height: 90vh;
+}
 #grammar-tables-page .tables-all-or-one {
   display: flex;
   flex-direction: column;

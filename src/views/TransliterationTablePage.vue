@@ -74,6 +74,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 90vh;
   padding-top: 5vh;
 }
 section {

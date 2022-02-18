@@ -59,6 +59,7 @@ export default {
   /* justify-content: space-between; */
   align-items: center;
   width: 90%;
+  min-height: 90vh;
   margin-left: 5%;
   /* background-color: #aaaaaaaa; */
 }

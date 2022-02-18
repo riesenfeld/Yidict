@@ -70,6 +70,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 90vh;
   padding-top: 10vh;
 }
 #usage-guide-page section {

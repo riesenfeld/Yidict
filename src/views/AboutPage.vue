@@ -14,6 +14,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 </style>
