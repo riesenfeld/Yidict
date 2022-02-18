@@ -1,0 +1,63 @@
+{
+  "transliterations": {
+    "title": "Transliteration Table",
+    "columnNames": ["Yiddish", "Romanization", "Name"],
+    "rows": [
+      ["<p>א</p>", "<p>(unwritten)</p>", "<p>shtumer alef</p>"],
+      ["<p>אַ</p>", "<p>a</p>", "<p>pasekh alef</p>"],
+      ["<p>אָ</p>", "<p>o</p>", "<p>komets alef</p>"],
+      ["<p>ב</p>", "<p>b</p>", "<p>beys</p>"],
+      ["<p>בֿ</p>", "<p>v</p>", "<p>veys</p>"],
+      ["<p>ג</p>", "<p>g</p>", "<p>giml</p>"],
+      ["<p>ד</p>", "<p>d</p>", "<p>daled</p>"],
+      ["<p>דזש</p>", "<p>dzh</p>", "<p>daled zayen shin</p>"],
+      ["<p>ה</p>", "<p>h</p>", "<p>hey</p>"],
+      ["<p>ו</p>", "<p>u</p>", "<p>vov</p>"],
+      ["<p>וּ</p>", "<p>u</p>", "<p>melupm vov</p>"],
+      ["<p>װ</p>", "<p>v</p>", "<p>tsvey vovn</p>"],
+      ["<p>וי</p>", "<p>oy</p>", "<p>vov yud</p>"],
+      ["<p>ז</p>", "<p>z</p>", "<p>zayen</p>"],
+      ["<p>זש</p>", "<p>zh</p>", "<p>zayen shin</p>"],
+      ["<p>ח</p>", "<p>kh</p>", "<p>khes</p>"],
+      ["<p>ט</p>", "<p>t</p>", "<p>tes</p>"],
+      ["<p>טש</p>", "<p>tsh</p>", "<p>tes shin</p>"],
+      ["<p>י</p>", "<p>y, i</p>", "<p>yud</p>"],
+      ["<p>יִ</p>", "<p>i</p>", "<p>khirik yud</p>"],
+      ["<p>יי</p>", "<p>ey</p>", "<p>tsvey yudn</p>"],
+      ["<p>ײַ</p>", "<p>ay</p>", "<p>pasekh tsvey yudn</p>"],
+      ["<p>כּ</p>", "<p>k</p>", "<p>kof</p>"],
+      ["<p>כ</p>", "<p>kh</p>", "<p>khof</p>"],
+      ["<p>ך</p>", "<p>kh</p>", "<p>langer khof</p>"],
+      ["<p>ל</p>", "<p>l</p>", "<p>lamed</p>"],
+      ["<p>מ</p>", "<p>m</p>", "<p>mem</p>"],
+      ["<p>ם</p>", "<p>m</p>", "<p>shlos mem</p>"],
+      ["<p>נ</p>", "<p>n</p>", "<p>nun</p>"],
+      ["<p>ן</p>", "<p>n, m</p>", "<p>langer nun</p>"],
+      ["<p>ס</p>", "<p>s</p>", "<p>samekh</p>"],
+      ["<p>ע</p>", "<p>e</p>", "<p>ayin</p>"],
+      ["<p>פּ</p>", "<p>p</p>", "<p>pey</p>"],
+      ["<p>פֿ</p>", "<p>f</p>", "<p>fey</p>"],
+      ["<p>ף</p>", "<p>f</p>", "<p>langer fey</p>"],
+      ["<p>צ</p>", "<p>ts</p>", "<p>tsadek</p>"],
+      ["<p>ץ</p>", "<p>ts</p>", "<p>langer tsadek</p>"],
+      ["<p>ק</p>", "<p>k</p>", "<p>kuf</p>"],
+      ["<p>ר</p>", "<p>r</p>", "<p>reysh</p>"],
+      ["<p>ש</p>", "<p>sh</p>", "<p>shin</p>"],
+      ["<p>שׂ</p>", "<p>s</p>", "<p>sin</p>"],
+      ["<p>תּ</p>", "<p>t</p>", "<p>tof</p>"],
+      ["<p>ת</p>", "<p>s</p>", "<p>sof</p>"]
+    ]
+  },
+  "alternatives": {
+    "title": "Common Orthography Outside the YIVO Standard",
+    "columnNames": ["Non-YIVO Character", "Name", "Romanization", "YIVO Preferred Spelling"],
+    "rows": [
+      ["<p>א</p>", "<p>alef</p>", "<p>a</p>", "<p>אַ</p>"],
+      ["<p>א</p>", "<p>alef</p>", "<p>o</p>", "<p>אָ</p>"],
+      ["<p>בּ</p>", "<p>beys</p>", "<p>b</p>", "<p>ב</p>"],
+      ["<p>וֹ</p>", "<p>khoylem</p>", "<p>o</p>", "<p>אָ</p>"],
+      ["<p>וֹ</p>", "<p>khoylem</p>", "<p>oy</p>", "<p>וי</p>"],
+      ["<p>פ</p>", "<p>fey</p>", "<p>f</p>", "<p>פֿ</p>"]
+    ]
+  }
+}

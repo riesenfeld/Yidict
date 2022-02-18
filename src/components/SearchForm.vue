@@ -16,36 +16,18 @@
       <input type="radio" id="romanization" value="romanization" v-model="searchType" />
       <label for="romanization"> Search for a word using YIVO standard romanization </label>
     </div>
-    <span class="form-flex-item">
-      <button type="submit" :aria-disabled="searchBoxIsEmpty()" @click.stop.prevent="submit()">
-        Submit
-      </button>
+    <div class="form-flex-item">
       <input type="checkbox" id="mode-checkbox" v-model="exactMode" />
-      <label for="mode-checkbox">
-        <details>
-          <summary>Return exact matches</summary>
-          <p>
-            When <strong>selected</strong>, only entries that contain the exact search term will be
-            returned by a dictionary lookup.
-          </p>
-          <p>
-            Leaving this checkbox <strong>unselected</strong> will cause a dictionary lookup to
-            return all possible matches against your search term. A search for the word
-            <em>car</em>, for instance, will also return the dictionary entries for
-            <em>carrot</em> and <em>scarf</em>.
-          </p>
-        </details>
-      </label>
-      <!-- <span></span> -->
-    </span>
-    <!-- <button
+      <label for="mode-checkbox"> Return exact matches (see usage guide for details) </label>
+    </div>
+    <button
       type="submit"
       class="form-flex-item"
       :aria-disabled="searchBoxIsEmpty()"
       @click.stop.prevent="submit()"
     >
       Submit
-    </button> -->
+    </button>
   </form>
 </template>
 

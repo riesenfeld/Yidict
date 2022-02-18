@@ -1,10 +1,15 @@
 <template>
-  <div id="table" class="grammar-table" :style="gridFromData">
+  <div id="table" class="table" :style="gridFromData">
     <div
       v-for="(element, index) in flattenedData"
       :key="index"
-      :class="{ 'table-element': true, 'table-header': index < tableData.columnNames.length }"
+      :class="{
+        'table-element': true,
+        'table-header': index < tableData.columnNames.length,
+        'table-data-element': index >= tableData.columnNames.length,
+      }"
       :style="tableElementStyles(index)"
+      :data-column="tableData.columnNames[index % tableData.columnNames.length]"
       v-html="element"
     ></div>
   </div>
@@ -65,7 +70,7 @@ export default {
 
 <style scoped>
 #table {
-  width: 90vw;
+  max-width: 90vw;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
@@ -78,6 +83,4 @@ export default {
   justify-content: center;
   align-items: center;
 }
-/* .table-header {
-} */
 </style>
