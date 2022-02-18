@@ -64,9 +64,9 @@ const normalizeYiddish = function (str) {
    *  */
 }
 
-const includesExactly = function (str, substr) {
+const normalizePunctuationAndWhitespace = function (str) {
   //remove leading and trailing whitespace from search term
-  substr = substr.trim()
+  str = str.trim()
 
   let substitutions = [
     /[,]/g,
@@ -84,15 +84,15 @@ const includesExactly = function (str, substr) {
 
   for (let i = 0; i < substitutions.length; i++) {
     str = str.replace(substitutions[i], " ")
-    substr = substr.replace(substitutions[i], " ")
   }
 
   //remove any instances of multiple adjacent spaces
   str = str.replace(/\s\s+/g, " ")
-  substr = substr.replace(/\s\s+/g, " ")
+  //trim again
+  return str.trim()
+}
 
-  //pad the string with exactly one space on either side
-  str = str.trim()
+const includesExactly = function (str, substr) {
   str = " " + str + " "
 
   if (str.startsWith(substr + " ")) {
@@ -105,6 +105,7 @@ const includesExactly = function (str, substr) {
 }
 
 const normalize = function (str, lang = "english") {
+  str = normalizePunctuationAndWhitespace(str)
   if (lang == "yiddish") {
     return normalizeYiddish(str)
   } else return str.toLowerCase()
