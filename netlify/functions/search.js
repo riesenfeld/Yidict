@@ -45,23 +45,6 @@ const normalizeYiddish = function (str) {
   str = str.replaceAll(diacriticsRange, "")
 
   return str
-
-  /**
-   * 
-   * var text = 'װ װ װ'
-     var doubleVov = '\u05D5\u05D5'
-
-     var result = text.replaceAll('\u05F0', doubleVov)
-
-     var fey = '\u05E4\u05BF'
-     var c = 'פֿ'
-
-     var pey = c.replaceAll('\u05BF', '')
-   * 
-   *  hebrew diacritics, etc:
-   *  פֿ PEY: \u05E4, rafe \u05BF
-   *
-   *  */
 }
 
 const normalizePunctuationAndWhitespace = function (str) {
@@ -123,27 +106,12 @@ const getMatches = function (searchTerm, searchType, exact = "false") {
   } else return matches
 }
 
-// const getExactMatches = function (searchTerm, searchType) {
-//   let index = getIndexOfSearchType(searchType)
-//   let matches = getMatches(searchTerm, searchType)
-//   return matches.filter((match) =>
-//     includesExactly(match[index].toLowerCase(), searchTerm.toLowerCase())
-//   )
-// }
-
 exports.handler = async function (event) {
   const eventBody = JSON.parse(event.body)
 
   console.log(eventBody)
 
-  // let matches
-
   let matches = getMatches(eventBody.searchTerm, eventBody.searchType, eventBody.exact)
-  // if (eventBody.exact == "true") {
-  //   matches = getExactMatches(eventBody.searchTerm, eventBody.searchType)
-  // } else {
-  //   matches = getMatches(eventBody.searchTerm, eventBody.searchType)
-  // }
 
   //Make the yiddish word the second element of each match array,
   //  so that we don't have to reorder our grid on the front end.
