@@ -9,9 +9,6 @@ const getIndexOfSearchType = function (searchType) {
 }
 
 const normalizeYiddish = function (str) {
-  //replace double yud char
-  // str.replace(/\p{05F2}/ug)
-
   let digraphs = [
     // double vov
     ["\u05F0", "\u05D5\u05D5"],

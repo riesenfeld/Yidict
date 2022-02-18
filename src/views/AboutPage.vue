@@ -3,12 +3,17 @@
     <section>
       <h3>Attributions</h3>
       <p>
-        Yidict is a reincarnation of the now-defunct <em>Yiddish Dictionary Online</em> (formerly at
-        <em>yiddishdictionaryonline.com</em>), created by <a href="">Sholem Berger</a> and
-        <a href="">Noam Starik</a>. The vast majority of the work of compiling this dictionary was
-        carried out by them, although I have made several thousand revisions myself, mostly in
-        normalizing entries according to their grammatical function, and to a lesser degree,
-        correcting errors and filling in missing definitional information.
+        Yidict is a reincarnation of the now-defunct <em>Yiddish Dictionary Online</em>, created by
+        <a href="">Sholem Berger</a> and <a href="">Noam Starik</a>. The vast majority of the work
+        of compiling this dictionary was carried out by them, although I have made several thousand
+        revisions myself, mostly in normalizing entries according to their grammatical function, and
+        to a lesser degree, correcting errors and filling in missing definitional information. You
+        can find a partial, non-searchable archive of the Yiddish Dictionary Online
+        <a
+          href="https://web.archive.org/web/20211019150353/http://www.yiddishdictionaryonline.com/"
+        >
+          here</a
+        >.
       </p>
       <p>
         Any discrepancies between Berger and Starik's original dictionary and this one are based on

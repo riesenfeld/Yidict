@@ -15,7 +15,7 @@
       ["<p>ו</p>", "<p>u</p>", "<p>vov</p>"],
       ["<p>וּ</p>", "<p>u</p>", "<p>melupm vov</p>"],
       ["<p>װ</p>", "<p>v</p>", "<p>tsvey vovn</p>"],
-      ["<p>וי</p>", "<p>oy</p>", "<p>vov yud</p>"],
+      ["<p>ױ</p>", "<p>oy</p>", "<p>vov yud</p>"],
       ["<p>ז</p>", "<p>z</p>", "<p>zayen</p>"],
       ["<p>זש</p>", "<p>zh</p>", "<p>zayen shin</p>"],
       ["<p>ח</p>", "<p>kh</p>", "<p>khes</p>"],
@@ -23,7 +23,7 @@
       ["<p>טש</p>", "<p>tsh</p>", "<p>tes shin</p>"],
       ["<p>י</p>", "<p>y, i</p>", "<p>yud</p>"],
       ["<p>יִ</p>", "<p>i</p>", "<p>khirik yud</p>"],
-      ["<p>יי</p>", "<p>ey</p>", "<p>tsvey yudn</p>"],
+      ["<p>ײ</p>", "<p>ey</p>", "<p>tsvey yudn</p>"],
       ["<p>ײַ</p>", "<p>ay</p>", "<p>pasekh tsvey yudn</p>"],
       ["<p>כּ</p>", "<p>k</p>", "<p>kof</p>"],
       ["<p>כ</p>", "<p>kh</p>", "<p>khof</p>"],
@@ -56,8 +56,10 @@
       ["<p>א</p>", "<p>alef</p>", "<p>o</p>", "<p>אָ</p>"],
       ["<p>בּ</p>", "<p>beys</p>", "<p>b</p>", "<p>ב</p>"],
       ["<p>וֹ</p>", "<p>khoylem</p>", "<p>o</p>", "<p>אָ</p>"],
-      ["<p>וֹ</p>", "<p>khoylem</p>", "<p>oy</p>", "<p>וי</p>"],
-      ["<p>פ</p>", "<p>fey</p>", "<p>f</p>", "<p>פֿ</p>"]
+      ["<p>וֹ</p>", "<p>khoylem</p>", "<p>oy</p>", "<p>ױ</p>"],
+      ["<p>ײֵ</p>", "<p>tseyrey tsvey yudn</p>", "<p>ey</p>", "<p>ײ</p>"],
+      ["<p>פ</p>", "<p>fey</p>", "<p>f</p>", "<p>פֿ</p>"],
+      ["<p>שׁ</p>", "<p>shin</p>", "<p>sh</p>", "<p>ש</p>"]
     ]
   }
 }
