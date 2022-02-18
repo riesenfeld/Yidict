@@ -8,9 +8,60 @@ const getIndexOfSearchType = function (searchType) {
   } else return 0
 }
 
-const getMatches = function (searchTerm, searchType) {
-  let index = getIndexOfSearchType(searchType)
-  return words.filter((word) => word[index].toLowerCase().includes(searchTerm.toLowerCase()))
+const normalizeYiddish = function (str) {
+  //replace double yud char
+  // str.replace(/\p{05F2}/ug)
+
+  let digraphs = [
+    // double vov
+    ["\u05F0", "\u05D5\u05D5"],
+    // vov yud
+    ["\u05F1", "\u05D5\u05D9"],
+    //double yud
+    ["\u05F2", "\u05D9\u05D9"],
+  ]
+
+  let sofitLetters = [
+    // khof sofit
+    ["\u05DA", "\u05DB"],
+    // mem sofit
+    ["\u05DD", "\u05DE"],
+    // nun sofit
+    ["\u05DF", "\u05E0"],
+    // fey sofit
+    ["\u05E3", "\u05E4"],
+    // tzadi sofit
+    ["\u05E5", "\u05E6"],
+  ]
+
+  let diacriticsRange = /[\u0590-\u05c7]/gu
+
+  for (let i = 0; i < digraphs.length; i++) {
+    str = str.replaceAll(digraphs[i][0], digraphs[i][1])
+  }
+  for (let i = 0; i < sofitLetters.length; i++) {
+    str = str.replaceAll(sofitLetters[i][0], sofitLetters[i][1])
+  }
+  str = str.replaceAll(diacriticsRange, "")
+
+  return str
+
+  /**
+   * 
+   * var text = 'װ װ װ'
+     var doubleVov = '\u05D5\u05D5'
+
+     var result = text.replaceAll('\u05F0', doubleVov)
+
+     var fey = '\u05E4\u05BF'
+     var c = 'פֿ'
+
+     var pey = c.replaceAll('\u05BF', '')
+   * 
+   *  hebrew diacritics, etc:
+   *  פֿ PEY: \u05E4, rafe \u05BF
+   *
+   *  */
 }
 
 const includesExactly = function (str, substr) {
@@ -51,33 +102,47 @@ const includesExactly = function (str, substr) {
   } else if (str.includes(" " + substr + " ")) {
     return true
   } else return false
-  /**
-   *  hebrew diacritics, etc:
-   *  פֿ PEY: \u05E4, rafe \u05BF
-   *
-   *  */
 }
 
-const getExactMatches = function (searchTerm, searchType) {
-  let index = getIndexOfSearchType(searchType)
-  let matches = getMatches(searchTerm, searchType)
-  return matches.filter((match) =>
-    includesExactly(match[index].toLowerCase(), searchTerm.toLowerCase())
-  )
+const normalize = function (str, lang = "english") {
+  if (lang == "yiddish") {
+    return normalizeYiddish(str)
+  } else return str.toLowerCase()
 }
+
+const getMatches = function (searchTerm, searchType, exact = "false") {
+  let index = getIndexOfSearchType(searchType)
+  let matches = words.filter((word) =>
+    normalize(word[index], searchType).includes(normalize(searchTerm, searchType))
+  )
+  if (exact == "true") {
+    return matches.filter((match) =>
+      includesExactly(normalize(match[index], searchType), normalize(searchTerm, searchType))
+    )
+  } else return matches
+}
+
+// const getExactMatches = function (searchTerm, searchType) {
+//   let index = getIndexOfSearchType(searchType)
+//   let matches = getMatches(searchTerm, searchType)
+//   return matches.filter((match) =>
+//     includesExactly(match[index].toLowerCase(), searchTerm.toLowerCase())
+//   )
+// }
 
 exports.handler = async function (event) {
   const eventBody = JSON.parse(event.body)
 
   console.log(eventBody)
 
-  let matches
+  // let matches
 
-  if (eventBody.exact == "true") {
-    matches = getExactMatches(eventBody.searchTerm, eventBody.searchType)
-  } else {
-    matches = getMatches(eventBody.searchTerm, eventBody.searchType)
-  }
+  let matches = getMatches(eventBody.searchTerm, eventBody.searchType, eventBody.exact)
+  // if (eventBody.exact == "true") {
+  //   matches = getExactMatches(eventBody.searchTerm, eventBody.searchType)
+  // } else {
+  //   matches = getMatches(eventBody.searchTerm, eventBody.searchType)
+  // }
 
   //Make the yiddish word the second element of each match array,
   //  so that we don't have to reorder our grid on the front end.
