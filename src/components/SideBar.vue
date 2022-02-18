@@ -1,11 +1,39 @@
 <template>
   <nav id="side-bar" :class="{ menu: true, active: menuIsOpen }">
     <div :class="{ 'menu-links': true, active: menuIsOpen }">
-      <router-link to="/usage" class="router-link">Usage guide</router-link>
-      <router-link to="/transliteration" class="router-link">Transliteration table</router-link>
-      <router-link to="/grammar" class="router-link">Grammar tables</router-link>
-      <router-link to="/about" class="router-link">About</router-link>
-      <router-link to="/contact" class="router-link">Contact</router-link>
+      <router-link
+        to="/"
+        :class="{
+          'router-link': true,
+          'current-page': matchesCurrentRoute('/') || matchesCurrentRoute('/search'),
+        }"
+        ><span>Search Dictionary</span>
+      </router-link>
+      <router-link
+        to="/usage"
+        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/usage') }"
+        ><span>Usage guide</span>
+      </router-link>
+      <router-link
+        to="/transliteration"
+        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/transliteration') }"
+        ><span>Transliteration table</span>
+      </router-link>
+      <router-link
+        to="/grammar"
+        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/grammar') }"
+        ><span>Grammar tables</span>
+      </router-link>
+      <router-link
+        to="/about"
+        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/about') }"
+        ><span>About</span>
+      </router-link>
+      <router-link
+        to="/contact"
+        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/contact') }"
+        ><span>Contact</span>
+      </router-link>
     </div>
   </nav>
 </template>
@@ -17,6 +45,16 @@ export default {
     menuIsOpen: {
       type: Boolean,
       default: false,
+    },
+  },
+  methods: {
+    matchesCurrentRoute(route) {
+      console.log(`route object: ${Object.keys(this.$route)}`)
+      console.log(`route name: ${this.$route.name}`)
+      console.log(`route path: ${this.$route.path}`)
+      if (route == this.$route.path) {
+        return true
+      } else return false
     },
   },
 }
@@ -49,5 +87,10 @@ export default {
   color: white;
   text-decoration: none;
   margin: 1vh 2vw;
+}
+
+.current-page span {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid white;
 }
 </style>
