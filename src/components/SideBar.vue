@@ -49,9 +49,6 @@ export default {
   },
   methods: {
     matchesCurrentRoute(route) {
-      console.log(`route object: ${Object.keys(this.$route)}`)
-      console.log(`route name: ${this.$route.name}`)
-      console.log(`route path: ${this.$route.path}`)
       if (route == this.$route.path) {
         return true
       } else return false
@@ -90,7 +87,6 @@ export default {
 }
 
 .current-page span {
-  /* text-decoration: underline; */
   border-bottom: 2px solid white;
 }
 </style>
