@@ -1,14 +1,8 @@
 <template>
   <form role="search" aria-label="dictionary">
     <div class="form-flex-item">
-      <input
-        type="text"
-        id="text-field"
-        class="screenreader-only"
-        placeholder="Search for a word"
-        v-model="searchTerm"
-      />
-      <label for="text-field">Enter a word</label>
+      <input type="text" id="text-field" placeholder="Search for a word" v-model="searchTerm" />
+      <label for="text-field" class="screenreader-only">Enter a word</label>
     </div>
     <div class="form-flex-item">
       <input type="radio" id="english" value="english" v-model="searchType" />
