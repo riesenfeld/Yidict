@@ -1,7 +1,13 @@
 <template>
-  <form>
+  <form role="search" aria-label="dictionary">
     <div class="form-flex-item">
-      <input type="text" id="text-field" placeholder="Search for a word" v-model="searchTerm" />
+      <input
+        type="text"
+        id="text-field"
+        class="screenreader-only"
+        placeholder="Search for a word"
+        v-model="searchTerm"
+      />
       <label for="text-field">Enter a word</label>
     </div>
     <div class="form-flex-item">
@@ -92,6 +98,24 @@ form {
   justify-content: space-between;
   align-items: flex-start;
 }
+/* An accessible way to hide form labels visually, but leave them in the
+ * accessibility tree for screen readers.
+ * Source: https://kittygiraudel.com/snippets/sr-only-class/ 
+ */
+.screenreader-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
 .form-flex-item {
   margin-top: 1vh;
   text-align: left;
@@ -117,10 +141,6 @@ button {
 button:active {
   box-shadow: none;
   transform: translateY(1.5px);
-}
-
-label[for="text-field"] {
-  display: none;
 }
 
 @media (orientation: portrait) {
