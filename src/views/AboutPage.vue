@@ -4,11 +4,11 @@
       <h3>Attributions</h3>
       <p>
         Yidict is a reincarnation of the now-defunct <em>Yiddish Dictionary Online</em>, created by
-        <a href="">Sholem Berger</a> and <a href="">Noam Starik</a>. The vast majority of the work
-        of compiling this dictionary was carried out by them, although I have made several thousand
-        revisions myself, mostly in normalizing entries according to their grammatical function, and
-        to a lesser degree, correcting errors and filling in missing definitional information. You
-        can find a partial, non-searchable archive of the Yiddish Dictionary Online
+        <b>Sholem Berger</b> and <b>Noam Starik</b>. The vast majority of the work of compiling this
+        dictionary was carried out by them, although I have made several thousand revisions myself,
+        mostly in normalizing entries according to their grammatical function, and to a lesser
+        degree, correcting errors and filling in missing definitional information. You can find a
+        partial, non-searchable archive of the Yiddish Dictionary Online
         <a
           href="https://web.archive.org/web/20211019150353/http://www.yiddishdictionaryonline.com/"
         >
@@ -30,6 +30,18 @@
         from Berger and Starik's original grammar tables on Yiddish Dictionary Online. The
         transliteration guide <router-link to="/transliteration">here</router-link> presents the
         orthographical standard codified by <a href="https://yivo.org/Yiddish-Alphabet">YIVO</a>.
+      </p>
+    </section>
+    <section>
+      <h3>More information</h3>
+      <p>
+        Questions or comments? You can contact me via
+        <router-link to="/contact">this form</router-link>.
+      </p>
+      <p>
+        If you're looking for a more comprehensive Yiddish-English online dictionary, and are
+        willing to pay for it, I highly recommend
+        <a href="https://verterbukh.org/vb">verterbukh.org</a>.
       </p>
     </section>
   </div>
