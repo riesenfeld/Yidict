@@ -2,19 +2,12 @@
   <div id="contact-page">
     <form name="contact" method="POST" data-netlify="true">
       <div class="form-item">
-        <label for="message" class="screenreader-only">Your message</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your message goes here."
-          required
-        >
+        <label for="message">Your message:</label>
+        <textarea name="message" id="message" cols="50" rows="10" placeholder="..." required>
         </textarea>
       </div>
       <div class="form-item">
-        <label for="email">Your email address</label>
+        <label for="email">Your email address:</label>
         <input type="email" name="email" id="email" required />
       </div>
       <button class="form-item">Submit</button>
@@ -37,33 +30,28 @@ export default {
   min-height: 90vh;
 }
 
-/* An accessible way to hide form labels visually, but leave them in the
- * accessibility tree for screen readers.
- * Source: https://kittygiraudel.com/snippets/sr-only-class/ 
- */
-.screenreader-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
-
 .form-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2vh;
   text-align: left;
+}
+
+label {
+  margin-bottom: 0.5vh;
 }
 
 textarea,
 input {
   /* Use UA styles for form elements */
   border: revert;
+}
+button {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px var(--shadow-color);
 }
 </style>
