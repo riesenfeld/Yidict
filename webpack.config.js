@@ -49,46 +49,46 @@ module.exports = {
   devtool: "#eval-source-map",
   plugins: [new VueLoaderPlugin()],
 }
-if (process.env.NODE_ENV === "production") {
-  module.exports.devtool = "#source-map"
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: '"production"',
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: "Yidict",
-      template: "index.html",
-      filename: path.resolve(__dirname, "dist/index.html"),
-      favicon: "favicon.ico",
-    }),
-    new PrerenderSPAPlugin({
-      staticDir: path.join(__dirname, "dist"),
-      routes: ["/", "/contact"],
+// if (process.env.NODE_ENV === "production") {
+module.exports.devtool = "#source-map"
+module.exports.plugins = (module.exports.plugins || []).concat([
+  new webpack.DefinePlugin({
+    "process.env": {
+      NODE_ENV: '"production"',
+    },
+  }),
+  new HtmlWebpackPlugin({
+    title: "Yidict",
+    template: "index.html",
+    filename: path.resolve(__dirname, "dist/index.html"),
+    favicon: "favicon.ico",
+  }),
+  new PrerenderSPAPlugin({
+    staticDir: path.join(__dirname, "dist"),
+    routes: ["/", "/contact"],
 
-      renderer: new Renderer({
-        // inject: {
-        //   foo: "bar",
-        // },
-        headless: true,
-        renderAfterDocumentEvent: "render-event",
-      }),
+    renderer: new Renderer({
+      // inject: {
+      //   foo: "bar",
+      // },
+      headless: true,
+      renderAfterDocumentEvent: "render-event",
     }),
-  ])
-} else {
-  // NODE_ENV === 'development'
-  module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: '"development"',
-      },
-    }),
-    new HtmlWebpackPlugin({
-      title: "DEVELOPMENT Yidict",
-      template: "index.html",
-      filename: "index.html",
-      favicon: "favicon.ico",
-    }),
-  ])
-}
+  }),
+])
+// } else {
+//   // NODE_ENV === 'development'
+//   module.exports.plugins = (module.exports.plugins || []).concat([
+//     new webpack.DefinePlugin({
+//       "process.env": {
+//         NODE_ENV: '"development"',
+//       },
+//     }),
+//     new HtmlWebpackPlugin({
+//       title: "DEVELOPMENT Yidict",
+//       template: "index.html",
+//       filename: "index.html",
+//       favicon: "favicon.ico",
+//     }),
+//   ])
+// }
