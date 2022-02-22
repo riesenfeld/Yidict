@@ -1,7 +1,7 @@
 <template>
   <div id="contact-page">
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="hidden-field">
-      <input type="hidden" name="hidden-field" id="honeypot" value="contact" />
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="form-name">
+      <input type="hidden" name="form-name" id="honeypot" value="contact" />
       <div class="form-item">
         <label for="message">Your message:</label>
         <textarea name="message" id="message" cols="50" rows="10" placeholder="..." required>
