@@ -3,9 +3,12 @@
     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" id="honeypot" value="contact" />
       <div class="form-item">
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required />
+      </div>
+      <div class="form-item">
         <label for="message">Your message:</label>
-        <textarea name="message" id="message" cols="50" rows="10" placeholder="..." required>
-        </textarea>
+        <textarea name="message" id="message" cols="50" rows="10" required> </textarea>
       </div>
       <div class="form-item">
         <label for="email">Your email address:</label>
@@ -39,7 +42,7 @@ export default {
 }
 
 label {
-  margin-bottom: 0.5vh;
+  margin-bottom: 0.25vh;
 }
 
 textarea,
