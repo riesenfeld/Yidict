@@ -1,6 +1,6 @@
 <template>
   <div id="contact-page">
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="form-name">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" id="honeypot" value="contact" />
       <div class="form-item">
         <label for="message">Your message:</label>
