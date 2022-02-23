@@ -1,5 +1,11 @@
 <template>
-  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/contact?submitted=true"
+  >
     <input type="hidden" name="form-name" id="honeypot" value="contact" />
     <div class="form-item">
       <label for="subject">Subject:</label>
