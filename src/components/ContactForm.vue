@@ -4,7 +4,7 @@
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    action="/about"
+    @submit.prevent="submitForm"
   >
     <input type="hidden" name="form-name" id="honeypot" value="contact" />
     <div class="form-item">
@@ -24,7 +24,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: "ContactForm",
+  methods: {
+    submitForm() {
+      this.$router.push("/contact?submitted=true")
+    },
+  },
+}
 </script>
 
 <style scoped>
