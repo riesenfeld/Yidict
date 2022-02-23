@@ -10,9 +10,20 @@
   </head>
   <body>
     <noscript>
-      <strong>
-        Yidict does not work properly without JavaScript enabled. Please enable it to continue.
-      </strong>
+      <section class="noscript-message">
+        <h3>At the moment, Yidict does not work without JavaScript</h3>
+        <p>Please enable JavaScript in your browser to continue.</p>
+      </section>
+      <style>
+        .noscript-message {
+          position: absolute;
+          top: 25vh;
+          left: 25vw;
+          width: 50vw;
+          height: 50vh;
+          text-align: center;
+        }
+      </style>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
