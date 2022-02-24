@@ -40,7 +40,7 @@ const routes = [
     component: () => import("@/views/GrammarTablesPage"),
   },
   {
-    path: "/contact",
+    path: "/contact/:submissionStatus?",
     name: "ContactPage",
     component: () => import("@/views/ContactPage"),
   },

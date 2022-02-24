@@ -48,8 +48,8 @@ export default {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.getEncoded(),
       })
-        .then(() => this.$router.push("/contact?submit=success"))
-        .catch(() => this.$router.push("/contact?submit=failure"))
+        .then(() => this.$router.push({ params: { submissionStatus: "success" } }))
+        .catch(() => this.$router.push({ params: { submissionStatus: "failure" } }))
     },
   },
 }
