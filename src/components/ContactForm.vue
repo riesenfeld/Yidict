@@ -3,10 +3,10 @@
     name="contact"
     method="POST"
     data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    data-netlify-honeypot="form-name"
     @submit.prevent="submitForm"
   >
-    <input type="hidden" name="form-name" id="honeypot" value="contact" v-model="honeypot" />
+    <input type="hidden" name="form-name" id="honeypot" />
     <div class="form-item">
       <label for="subject">Subject:</label>
       <input type="text" name="subject" id="subject" v-model="subject" required />
@@ -29,7 +29,6 @@ export default {
   name: "ContactForm",
   data() {
     return {
-      honeypot: "notfilledout",
       subject: "",
       message: "",
       email: "",
@@ -38,20 +37,11 @@ export default {
   methods: {
     getEncoded() {
       let obj
-      if (this.honeypot == "notfilledout") {
-        obj = {
-          "form-name": "contact",
-          subject: this.subject,
-          message: this.message,
-          email: this.email,
-        }
-      } else {
-        obj = {
-          "form-name": this.honeypot,
-          subject: this.subject,
-          message: this.message,
-          email: this.email,
-        }
+      obj = {
+        "form-name": "contact",
+        subject: this.subject,
+        message: this.message,
+        email: this.email,
       }
       return Object.keys(obj)
         .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(obj[key]))
