@@ -17,6 +17,10 @@
       <h3 class="message-failure">Submission failed</h3>
       <p>Something has prevented your message from being sent.</p>
       <p>Please double-check your internet connection or try again later.</p>
+      <div class="return-links">
+        <router-link to="/contact">Return to contact page</router-link>
+        <router-link to="/">Return to home page</router-link>
+      </div>
     </div>
   </div>
 </template>
