@@ -1,12 +1,6 @@
 <template>
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="form-name"
-    @submit.prevent="submitForm"
-  >
-    <input type="hidden" name="form-name" id="honeypot" />
+  <form name="contact" method="POST" @submit.prevent="submitForm">
+    <input type="hidden" name="form-name" id="form-name" value="contact" />
     <div class="form-item">
       <label for="subject">Subject:</label>
       <input type="text" name="subject" id="subject" v-model="subject" required />
@@ -29,6 +23,7 @@ export default {
   name: "ContactForm",
   data() {
     return {
+      honeypot: "notfilledout",
       subject: "",
       message: "",
       email: "",
