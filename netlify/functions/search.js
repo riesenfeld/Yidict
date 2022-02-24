@@ -103,6 +103,48 @@ const getMatches = function (searchTerm, searchType, exact = "false") {
   } else return matches
 }
 
+/** The Levenshtein distance algorithm,
+ *  modified for the case where a string in results contains the search term in its entirety.
+ *  Ex. searchTerm = "morning" and searchResult =  "good morning"
+ *    This case will have a distance of 0.5 -- not quite an exact match, but pretty close.
+ * */
+const getLevenshteinDistance = function (searchTerm, searchResult) {
+  if (searchResult == searchTerm) {
+    return 0.0
+  }
+  // normalize and check for perfect inclusion, and if so return 0.5
+  // paddedSearchResult = " "
+  // else if(searchResult)
+}
+
+/* Sort results according to their Levenshtein distance from the search term */
+const levenshteinSort = function (searchTerm, results) {
+  let distances = []
+  let sortedResults = []
+
+  for (let i = 0; i < results.length; i++) {
+    distances.push({
+      distance: getLevenshteinDistance(searchTerm, results[i]),
+      index: i,
+    })
+  }
+  distances = distances.sort(function (el1, el2) {
+    if (el1.distance > el2.distance) {
+      /* Sort el2 before el1 */
+      return 1
+    } else if (el1.distance < el2.distance) {
+      /* Sort el1 before el2 */
+      return -1
+    } else return 0
+    /* Keep original order of el1 and el2 */
+  })
+
+  for (let i = 0; i < distances.length; i++) {
+    sortedResults.push(results[distances[i].index])
+  }
+  return sortedResults
+}
+
 exports.handler = async function (event) {
   const eventBody = JSON.parse(event.body)
 
