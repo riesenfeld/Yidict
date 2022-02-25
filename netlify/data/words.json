@@ -170,7 +170,7 @@
   ],
   ["humane; human (ideally)", "mentshlekh", "∙", "adjective", "מענטשלעך"],
   ["tedious", "marudne", "∙", "adjective", "מאַרודנע"],
-  ["Talmud", "mishne", "∙", "feminine noun", "משנה or מישנה"],
+  ["Mishna", "mishne", "∙", "feminine noun", "משנה, מישנה"],
   ["Easter", "keysekh", "key'∙sekh", "masculine noun", "קייסעך"],
   ["frosty", "frostik", "∙", "adjective", "פֿראָסטאיק"],
   ["clothe", "bakleydn", "∙", "verb", "באַקליידן"],
@@ -360,7 +360,7 @@
     "a gutn (or) a gutn tog",
     "a goot'∙n tog / a ∙git'∙n toog",
     "interjection",
-    "אַ גוטן or אַ גוטן טאָג"
+    "אַ גוטן, אַ גוטן טאָג"
   ],
   ["authority, permission, clearance", "reshus", "reh·shoos'", "masculine noun", "רשות"],
   ["control; conduct (an orchestra)", "dirigirn", "∙", "verb", "דיריגירן"],
@@ -454,7 +454,7 @@
   ["future", "kumedikeyt", "∙", "feminine noun", "קומעדיקייט"],
   ["sit (something down); have a seat", "zitsn", "zits'∙n", "verb", "זיצן"],
   ["main thing, most important thing", "hoyptzakh", "∙", "feminine noun", "הויפּטזאַך"],
-  ["throw up, cast up,", "aroyfvarfn", "∙", "verb", "אַרויפֿוואַרפֿן"],
+  ["throw up, cast up", "aroyfvarfn", "∙", "verb", "אַרויפֿוואַרפֿן"],
   ["prayer: one who prays, worshipper", "mispalel", "∙", "masculine noun", "מתפּלל"],
   ["give the ax to", "unterhakn", "oont'∙er∙hak'∙n", "verb", "אונטערהאַקן"],
   ["encourage", "oyfmuntern", "af∙moon'∙ter∙n / oyf∙moon'∙ter∙n", "verb", "אויפֿמונטערן"],
@@ -639,7 +639,7 @@
     "mishne",
     "∙",
     "feminine noun",
-    "משנה or מישנה"
+    "משנה, מישנה"
   ],
   ["saying", "vertl", "vert∙l", "neuter noun", "ווערטל"],
   ["harmonica", "garmoshke", "gar·mosh'·keh", "feminine noun", "גאַרמאָשקע"],
@@ -695,7 +695,7 @@
   ["contempt, scorn", "bitl", "∙", "masculine noun", "ביטול"],
   ["welfare (support)", "sotsfarzorgn", "sots'·far·zorg·n", "masculine noun", "סאָצפֿאַרזאָרגן"],
   ["neighbor", "shokhn (shkheynim)", "∙", "masculine noun", "שכן"],
-  ["bufoon, clown", "lets (leytsim / letsonim / letsonem)", "∙", "masculine noun", "לץ"],
+  ["bufoon, clown", "lets (leytsim/letsonim/letsonem)", "∙", "masculine noun", "לץ"],
   ["memory, remembrance", "ondenk", "∙", "masculine noun", "אָנדענק"],
   ["you", "du", "doo", "pronoun", "דו"],
   ["over the, above the", "ibern", "ib'·er·n", "contraction (preposition + article)", "איבערן"],
@@ -811,7 +811,7 @@
     "oysfirn mayns/dayns/zayns, etc.",
     "oys'·feer·n mayns/dayns/zayns / oys'·feer·n maans/daans/zaans",
     "verb",
-    "אויספֿירן מײַנס or דײַנס or זײַנס"
+    "אויספֿירן מײַנס/דײַנס/זײַנס"
   ],
   ["allow, leave (something as), let", "lozn", "lohz'∙n", "verb", "לאָזן"],
   ["dislike, hate", "hobn fant", "hob'·n fant", "verb", "האָבן פֿאַנט"],
@@ -917,7 +917,7 @@
   ["nozzle", "nezl", "∙", "neuter noun", "נעזל"],
   ["trail, path", "vegl", "∙", "neuter noun", "וועגל"],
   [
-    "Gemara, the part of the Talmud that comments on the Mishnah",
+    "Gemara, the part of the Talmud that comments on the Mishna",
     "gemore",
     "ge∙mor'∙eh",
     "feminine noun",
@@ -1390,13 +1390,7 @@
   ["appreciate", "opshatsn", "∙", "verb", "אָפּשאַצן"],
   ["pouch", "zekl", "∙", "neuter noun", "זעקל"],
   ["gender (grammar)", "min", "∙", "masculine noun", "מין"],
-  [
-    "helpful, of assistance to",
-    "bahilfik / bayhilfik",
-    "∙",
-    "adjective",
-    "באַהילפֿיק or בײַהילפֿיק"
-  ],
+  ["helpful, of assistance to", "bahilfik / bayhilfik", "∙", "adjective", "באַהילפֿיק, בײַהילפֿיק"],
   ["dollar", "dolar", "∙", "masculine noun", "דאָלאַר"],
   ["bathroom", "vashtsimer", "vash'∙tsim∙er", "masculine noun", "וואַשצימער"],
   ["beet", "burik", "boor'∙ik", "masculine noun", "בוריק"],
@@ -1506,7 +1500,7 @@
   ["consent, allow", "bashteyn", "ba∙shtey'∙n / ba∙shtay'∙n", "verb", "באַשטיין"],
   ["hydrogen", "vasershtof", "∙", "masculine noun", "וואַסערשטאָף"],
   ["proverbs: The Book of Proverbs", "mishley", "∙", "feminine or neuter noun", "משלי/ספר משלי"],
-  ["explain, elucidate", "masbir zayn / mazber zayn", "∙", "periphrastic verb", "מסביר זײַן"],
+  ["explain, elucidate", "masbir zayn/mazber zayn", "∙", "periphrastic verb", "מסביר זײַן"],
   ["thereby, hereby", "dermit", "∙", "adverb", "דערמיט"],
   ["anxious, worried", "bazorgt", "∙", "adjective", "באַזאָרגט"],
   ["pick", "dluben", "dloob·en", "verb", "דלובען"],
@@ -1537,7 +1531,7 @@
   ["snug (fit)", "shlisik", "∙", "adjective", "שליסיק"],
   ["government, province", "gubernye", "∙", "feminine noun", "גובערניע"],
   [
-    "put (somthing) in (inside), place (somthing) in (inside),",
+    "put (somthing) in (inside), place (somthing) in (inside)",
     "araynzetsn",
     "∙",
     "verb",
@@ -1551,7 +1545,7 @@
   ["non-kosher", "treyf", "∙", "adjective", "טרייף"],
   ["really?", "a?", "ah?", "interjection", "? אַ"],
   ["lament, outcry", "vaygeshray", "∙", "neuter noun", "ווײַגעשרײַ"],
-  ["man, male", "mantsbil / mansbil", "∙", "masculine noun", "מאַנצביל or מאַנסביל"],
+  ["man, male", "mantsbil/mansbil", "∙", "masculine noun", "מאַנצביל, מאַנסביל"],
   ["dwelling, residence", "voynort", "voyn'∙ort", "masculine noun", "וווינאָרט"],
   ["greeting, greetings, regards", "grus", "groos", "masculine noun", "גרוס"],
   ["improvisation", "improvizatsye", "im'·prov·i·zats'·ye", "feminine noun", "אימפּראָוויזאַציע"],
@@ -1735,9 +1729,9 @@
     "farvos nisht / far vos nisht",
     "far∙vos' nisht / far∙voos' nisht",
     "adverb",
-    "פֿאָרוואָס נישט or פֿאַר וואָס נישט"
+    "פֿאָרוואָס נישט, פֿאַר וואָס נישט"
   ],
-  ["archer", "fayln-boyger", "fay'·ln-boy׳·ger", "masculine noun", "פֿײַלן־בויגער"],
+  ["archer", "fayln-boyger", "fay'·ln-boy'·ger", "masculine noun", "פֿײַלן־בויגער"],
   ["eighth", "akht", "∙", "adjective", "אַכט"],
   ["incident", "intsident", "in'·tsi·dent", "masculine noun", "אינצידענט"],
   ["grow (something), cultivate, raise", "hodeven", "∙", "verb", "האָדעווען"],
@@ -1881,7 +1875,7 @@
     "sheferish (or) shaferish",
     "shef'∙er∙ish (or) shaf'∙er∙ish",
     "adjective",
-    "שעפֿעריש or שאפֿעריש"
+    "שעפֿעריש, שאפֿעריש"
   ],
   ["way, path, road", "veg", "veyg", "masculine noun", "װעג"],
   ["incantation, magic formula", "shprukh", "shprookh", "masculine noun", "שפּרוך"],
@@ -2071,7 +2065,7 @@
   ["kof, 11th letter of the Yiddish alphabet", "kof", "·", "masculine or feminine noun", "כּ"],
   ["exhaust, deplete", "oysshepn", "osy'·shep·n", "verb", "אוסשעפּן"],
   ["birds of a feather", "fun eyn teyg geknotn", "∙", "expression", "פֿון איין טייג געקנאָטן"],
-  ["prune", "floym / netriktne floym", "∙", "feminine noun", "פֿלוים or נעטרינקטע פֿלוימ"],
+  ["prune", "floym/netriktne floym", "∙", "feminine noun", "פֿלוים, נעטרינקטע פֿלוימ"],
   ["naivete", "temimes", "∙", "neuter noun", "תּמימות"],
   ["steel", "shtoln", "shtol'∙n", "adjective", "שטאָלן"],
   ["limp", "hinken", "∙", "verb", "הינקען"],
@@ -2144,7 +2138,7 @@
   ["capable (or efficient) person or housewife", "berye", "ber'·yeh", "feminine noun", "בריה"],
   ["thought", "makhshove", "∙", "feminine noun", "מחשווה"],
   ["illustration", "ilustratsye", "i·loo·strat'·sye", "feminine noun", "אילוסטראַציע"],
-  ["know (a skill or language)", "kenen or konen", "ken'∙en or kon'∙en", "verb", "קענען or קאָנען"],
+  ["know (a skill or language)", "kenen or konen", "ken'∙en or kon'∙en", "verb", "קענען, קאָנען"],
   ["msyticism", "mistik", "∙", "feminine noun", "מיסטיק"],
   ["tof, 25th letter of the Yiddish alphabet", "tof", "∙", "masculine or feminine noun", "תּ"],
   ["serve (in office)", "amtirn", "am∙teer'∙n", "verb", "אַמטירן"],
@@ -2239,7 +2233,7 @@
   ["forested", "baveldert", "ba∙vel'∙dert", "adjective", "באַוועלדערט"],
   ["realize", "aroyszen", "∙", "verb", "אַרויסזען"],
   ["bottle", "flash", "∙", "feminine noun", "פֿלאַש"],
-  ["Jerusalem", "yerusholayim  / yerusholaim", "yeh∙roo'∙sho∙lay∙im", "neuter noun", "ירושלים"],
+  ["Jerusalem", "yerusholayim/yerusholaim", "yeh∙roo'∙sho∙lay∙im", "neuter noun", "ירושלים"],
   ["phonetic", "fonetish", "∙", "adjective", "פֿאָנעטיש"],
   ["public, audience, crowd", "oylem", "∙", "masculine noun", "עולם"],
   ["arrange", "aranzhirn", "a∙ran∙zhir'∙n", "verb", "אַראַנזשירן"],
@@ -2274,7 +2268,7 @@
   ["spurt, squirt, sprinkle", "shpritsn", "∙", "verb", "שפּריץן"],
   ["hair", "hor", "hor / hoor", "feminine noun", "האָר"],
   ["bulls-eye", "tsilapl", "tsil·ap'·l", "neuter noun", "צילאַפּל"],
-  ["hate, hatred, abomination", "sine", "SIN'·eh", "feminine noun", "שׂנאה or שׂינאה"],
+  ["hate, hatred, abomination", "sine", "SIN'·eh", "feminine noun", "שׂנאה, שׂינאה"],
   ["writer (male)", "shrayber", "shray'∙ber / shraa'∙ber", "masculine noun", "שרײַבער"],
   ["how, in what way", "vi azoy", "vee' a·zoy", "adverb", "ווי אַזוי"],
   ["bourgeois", "burzshuaz", "boor∙zshoo∙az'", "adjective", "בורזשואַז"],
@@ -2383,7 +2377,7 @@
   ["times (x times x)", "tsvey mol tsvey", "∙", "phrase", "צווײַ מאָל צוויי"],
   ["Velvel", "velvl", "∙", "noun (name)", "וועלוול"],
   ["sew, stitch", "neyen", "∙", "verb", "נייען"],
-  ["word; thing", "dvar (dvorem / dvorim)", "d∙var", "masculine noun", "דוור"],
+  ["word; thing", "dvar (dvorem/dvorim)", "d∙var", "masculine noun", "דוור"],
   ["bra, brassiere", "stanik", "sta'·nik", "masculine noun", "סטאַניק"],
   ["rhythmic", "ritmish", "∙", "adjective", "ריטמיש"],
   ["finish doing; play a trick; perpetuate", "opton", "op'∙ton / oop'∙teen", "verb", "אָפּטאָן"],
@@ -2405,7 +2399,7 @@
   ["study", "limud (limudim)", "li'·mood (li·mood'·im)", "masculine noun", "לימוד"],
   ["influence", "baaynflusn", "ba∙ayn'∙floos∙n", "verb", "באַאײַנפֿלוסן"],
   ["address (speech)", "adres", "ad∙res'", "feminine noun", "אַדרעס"],
-  ["head: at the head of a bed", "tsukopn / tsukopens", "∙", "adverb", "צוקאָפּנ or צוקאָפּענס"],
+  ["head: at the head of a bed", "tsukopn/tsukopens", "∙", "adverb", "צוקאָפּנ, צוקאָפּענס"],
   ["whew!, phew!", "uf", "∙", "interjection", "אופֿ"],
   ["walking", "shpatsirndik", "∙", "adjective", "שפּאַצירנדיק"],
   ["eighteen", "akhtsn", "∙", "number", "אַכצן"],
@@ -2528,7 +2522,7 @@
   ["allied (with)", "aliirt", "a∙leert'", "predicative adjective", "אַליִיִרט"],
   ["hump", "horb", "horb", "masculine noun", "האָרב"],
   ["office", "byuro", "byu'∙ro", "neuter noun", "ביוראָ"],
-  ["tooth", "tson (tseyn / tseyner)", "∙", "masculine noun", "צאָן"],
+  ["tooth", "tson (tseyn/tseyner)", "∙", "masculine noun", "צאָן"],
   ["axis", "aks", "∙", "feminine noun", "אַקס"],
   ["map", "mape", "∙", "feminine noun", "מאַפּע"],
   ["nasal, twangy", "fanfate", "∙", "adjective", "פֿאַסטן"],
@@ -2593,7 +2587,7 @@
   ["small bread", "breytl", "∙", "neuter noun", "ברייטל"],
   ["use, make use of, utilize, take advantage of", "oysnitsn", "∙", "verb", "אויסניצן"],
   ["palm of the hand", "tener", "∙", "masculine noun", "טענער"],
-  ["in general, generally", "bklal or bkhlal", "b∙klal' (or) b∙khlal", "adverb", "בכּלל or בכלל"],
+  ["in general, generally", "bklal or bkhlal", "b∙klal' (or) b∙khlal", "adverb", "בכּלל, בכלל"],
   ["passionate; red hot", "laydnshaftlekh", "lay'∙dn∙shaft∙lekh", "adjective", "לײַדנשאַפֿטלעך"],
   ["grammar, Hebrew grammar", "dikdek", "∙", "masculine noun", "דיקדוק"],
   ["soda", "sode", "so'∙deh", "feminine noun", "סאַדע"],
@@ -2693,7 +2687,7 @@
     "dervayl (or) dervayle",
     "der∙vayl' (or) der∙vay'∙leh",
     "adverb",
-    "דערווײַל or דערווײַלע"
+    "דערווײַל, דערווײַלע"
   ],
   ["beyond; above", "lemayle", "∙", "adverb", "למעלה"],
   ["autumnal", "harbstik", "∙", "adjective", "האַרבסטיק"],
@@ -2938,7 +2932,7 @@
   ["God willing", "mirtseshem", "∙", "expression", "מירצעשעם"],
   ["hidden, concealed", "farborgn", "∙", "adjective", "פֿאַרבאָרגן"],
   ["beam with pride, be delighted with, revel in", "kveln", "kvel'·n", "verb", "קוועלן"],
-  ["think up, invent,", "oystrakhtn", "∙", "verb", "אויסטראַכטן"],
+  ["think up, invent", "oystrakhtn", "∙", "verb", "אויסטראַכטן"],
   ["niece", "plimenitse", "∙", "feminine noun", "פּלימעניצע"],
   [
     "join, contact, communicate with, get in touch with",
@@ -3285,7 +3279,7 @@
     "tishebov",
     "∙",
     "masculine noun",
-    "תּשעה־באָבֿ or תּישעה־באָבֿ"
+    "תּשעה־באָבֿ, תּישעה־באָבֿ"
   ],
   ["smuggle", "shmuglen", "∙", "verb", "שמוגלען"],
   ["safely, in tact", "bsholem", "b·sho'·lem / b'·shoo'·lem", "adverb", "בשלום"],
@@ -3371,7 +3365,7 @@
   ["soon", "bald", "∙", "adverb", "באַלד"],
   ["ever since", "fun zint", "∙", "conjuntion", "פֿון זינט"],
   ["lesson in the Talmud", "shier (shiurim)", "shee'∙er (shee∙oor'∙im)", "masculine noun", "שיעור"],
-  ["around", "arum", "a∙room׳", "adverb", "אַרום"],
+  ["around", "arum", "a∙room'", "adverb", "אַרום"],
   ["future", "osed", "∙", "masculine noun", "עתיד"],
   ["recording", "rekordirung", "reh·kord·deer'·oong", "feminine noun", "רעקאָרדירונג"],
   ["optimistic", "optimistish", "opt∙i∙mist'∙ish", "adjective", "אָפּטימיסטיש"],
@@ -3381,7 +3375,7 @@
   ["hungry", "hungerik", "hoong'∙er∙ik / hing'∙er∙ik", "adjective", "הונגעריק"],
   ["August", "oygust", "oy'∙goost / au'∙goost", "masculine noun", "אויגוסט"],
   [
-    "put: put (somthing) down, place (somthing) down,",
+    "put: put (somthing) down, place (somthing) down",
     "leygn (zikh)",
     "∙",
     "transitive or intransitive verb",
@@ -3806,7 +3800,7 @@
   ["woe is me!", "a klog iz mir!", "∙", "interjection", "! אַ קלאָג איז מיר"],
   ["small wheel", "redl", "reh'·del", "neuter noun", "רעדל"],
   ["dead", "toyt", "∙", "adjective", "טויט"],
-  ["Rumania", "rumanye / rumanie", "∙", "noun (place)", "רומאַניע"],
+  ["Rumania", "rumanye/rumanie", "∙", "noun (place)", "רומאַניע"],
   ["torture", "farpeynikn", "∙", "verb", "פֿאַרפּייניקן"],
   [
     "prayer recited on the eve of Yom Kipur",
@@ -3843,7 +3837,7 @@
     "atsind / atsinder / atsindert",
     "∙",
     "adverb",
-    "אַצינד or אַצינדער or אַצינדערט"
+    "אַצינד, אַצינדער, אַצינדערט"
   ],
   ["look in, peep in", "araynkukn", "∙", "verb", "אַרײַנקוקן"],
   ["Spanish", "shpanish", "∙", "adjective", "שפּאַניש"],
@@ -3942,7 +3936,7 @@
   ["mile", "mayl", "∙", "feminine noun", "מײַל"],
   ["ark (Noah's)", "teyve", "tey'·veh", "feminine noun", "תּבֿה"],
   ["devilish, fiendish, diabolical", "tayvlonish", "∙", "adjective", "טײַוולאָניש"],
-  ["glass (material)", "gloz gloz / glooz", "∙", "neuter noun", "גלאָז"],
+  ["glass (material)", "gloz/glooz", "∙", "neuter noun", "גלאָז"],
   ["gift, bounty", "gob", "∙", "feminine noun", "גאָב"],
   ["noisy, boisterous", "tumldik", "∙", "adjective", "טומלדיק"],
   ["disappear", "farshvundn vern", "∙", "verb", "פֿאַרשווונדן ווערן"],
@@ -4153,7 +4147,7 @@
     "roz / roze / rozeve",
     "roz / roz'∙eh / roz'·eh·veh",
     "adjective",
-    "ראָז or ראָזע or ראָזעווע"
+    "ראָז, ראָזע, ראָזעווע"
   ],
   ["flag", "fon", "∙", "feminine noun", "פֿאָן"],
   ["stream, current, tide", "shtrom", "shtrom", "masculine noun", "שטראָם"],
@@ -4539,7 +4533,7 @@
     "dermanen zikh or dermonen zikh",
     "der∙man'∙en / der∙mon'∙en zikh",
     "verb",
-    "דערמאָנען or דערמאָנען זיך"
+    "דערמאָנען, דערמאָנען זיך"
   ],
   ["teacher of children in a Jewish school", "melamed (melamdim)", "∙", "masculine noun", "מלמד"],
   ["grandfather", "zeyde", "zey'∙deh", "masculine noun", "זיידע"],
@@ -4844,7 +4838,7 @@
   ["maternity ward", "kimpet-palate", "∙", "feminine noun", "קימפּעט־פּאַלאַטע"],
   ["suspicious", "fardekhtik", "∙", "adjective", "פֿאַרדעכטיק"],
   ["more or less", "merveyniker", "mer∙veyn'·ik·er", "adverb", "מער־ווייניקער"],
-  ["collectively", "btsiber / betsiber", "∙", "adverb", "בציבור"],
+  ["collectively", "btsiber/betsiber", "∙", "adverb", "בציבור"],
   ["founder", "grinder", "∙", "masculine noun", "גרינדער"],
   ["word", "vort", "∙", "neuter noun", "וואָרט"],
   ["distinction; award", "oystsekhenung", "∙", "feminine noun", "אויסצייכענונג"],
@@ -5122,7 +5116,7 @@
   ["luck", "mazl (mazoles)", "mah'∙zl (ma∙zo'∙les)", "neuter noun", "מזל"],
   ["bar, pub, tavern", "shenk", "∙", "feminine or masculine noun", "שענק"],
   ["family name, surname, family", "familye", "fah∙mil'∙yeh", "feminine noun", "פֿאַמיליע"],
-  ["chocolate", "shokolad / shokalad", "∙", "masculine noun", "שאָקאָלאַד or שאָקאַלאַ"],
+  ["chocolate", "shokolad/shokalad", "∙", "masculine noun", "שאָקאָלאַד, שאָקאַלאַ"],
   ["nickel, five cent coin", "finfele", "∙", "neuter noun", "פֿינפֿעלע"],
   ["put, set down", "avekleygn", "∙", "verb", "אַוועקלייגן"],
   ["possible", "meglekh", "∙", "adjective", "מעגלעך"],
@@ -5181,7 +5175,7 @@
   ["measurement", "mestung", "∙", "feminine noun", "מעסטונג"],
   ["now: now and then", "fun tsayt tsu tsayt", "∙", "adverb", "פֿון צײַט צו צײַט"],
   ["devil, fiend", "tayvl (tayvolim)", "∙", "masculine noun", "טײַוול"],
-  ["useful", "nitslekh/nutslekh", "∙", "adjective", "ניצלעך or נוצלעך"],
+  ["useful", "nitslekh/nutslekh", "∙", "adjective", "ניצלעך, נוצלעך"],
   ["iron", "ayzern", "ay'∙zern / aa'∙zern", "adjective", "אײַזערן"],
   ["teacher (female)", "lererke", "∙", "feminine noun", "לערערקע"],
   ["carrot", "mer", "mer", "feminine noun", "מער"],
@@ -5200,7 +5194,7 @@
     "aroysred (or) aroysreyd",
     "a'·roys'·red",
     "masculine noun",
-    "אַרויסרעד or אַרויסרייד"
+    "אַרויסרעד, אַרויסרייד"
   ],
   [
     "pick one's nose",
@@ -5441,7 +5435,7 @@
     "bli",
     "in ful∙n blee (or) in rekht'n blee / in feel'∙n blee",
     "phrase",
-    "אין פֿולן or רעכטן בלי"
+    "אין פֿולן, רעכטן בלי"
   ],
   [
     "smell, odor, stink",
@@ -5672,7 +5666,7 @@
     "an eygen/er mentsh",
     "an eyg'·en·/er mentsh",
     "phrase",
-    "אַן אייגנ or ער מענטש"
+    "אַן אייגנ, ער מענטש"
   ],
   ["transport, transfer", "ariberfirn", "a∙rib'∙er∙feer∙n", "verb", "אַריבערפֿירן"],
   ["wake, keep vigil", "vakhn", "∙", "verb", "וואַכן"],
@@ -5720,13 +5714,13 @@
     "mit grus dayn/ayer...",
     "mit groos dayn/a'∙yer / mit groos daan/a'∙yes",
     "phrase",
-    "מיט גרוס דײַן or אײַער"
+    "מיט גרוס דײַן/אײַער"
   ],
   ["ancient, old-fashioned", "alttsaytish", "alt∙tsayt'∙ish", "adjective", "אַלטצאײַטיש"],
   ["rabbinical", "rabonish", "ra∙bo'∙nish", "adjective", "רבניש"],
   ["still", "shtil", "∙", "adjective", "שטיל"],
   ["poor (so and so)", "az okh un vey tsu...", "∙", "expression", "אַז אָך און וויי צו..."],
-  ["why", "farvos / far vos", "far∙vos' / far∙voos'", "adverb", "פֿאַרוואָס or פֿאַר וואָס"],
+  ["why", "farvos/far vos", "far∙vos' / far∙voos'", "adverb", "פֿאַרוואָס, פֿאַר וואָס"],
   ["in reality, truthfully (speaking)", "grade", "gra'∙deh", "adverb", "גראַדע"],
   ["black", "shvarts", "∙", "adjective", "שוואַרץ"],
   ["reject, condemn", "brakirn", "bra∙keer'∙n", "verb", "בראַקירן"],
@@ -6048,7 +6042,7 @@
     "adjective",
     "פֿילזײַטיק"
   ],
-  ["substitute", "bimkem", "∙", "masculine noun", "במקום or בימקום"],
+  ["substitute", "bimkem", "∙", "masculine noun", "במקום, בימקום"],
   ["generally", "in algemeyn", "∙", "adverb", "אין אַלגעמיין"],
   ["seventh", "zibet", "∙", "adjective", "זיבעט"],
   ["his, its", "zayn", "zayn / zaan", "possessive pronoun", "זײַן"],
@@ -6931,7 +6925,7 @@
   ["internet", "internets", "∙", "feminine noun", "אינטערנעץ"],
   ["guzzle, swill", "zoyfn", "∙", "verb", "זויפֿן"],
   ["nook, cubby", "vinkele", "∙", "neuter noun", "ווינקעלע"],
-  ["automobile, car", "oytomobil", "oy'∙to∙mo∙beel׳", "masculine noun", "אויטאָמאָביל"],
+  ["automobile, car", "oytomobil", "oy'∙to∙mo∙beel'", "masculine noun", "אויטאָמאָביל"],
   ["divorce", "get", "∙", "masculine noun", "גט"],
   ["salvation", "yeshue", "yeh·shoo'·eh", "feminine noun", "ישועה"],
   ["stroke, move, sweep, swing, wave", "makh", "∙", "masculine noun", "מאַך"],
@@ -6941,7 +6935,7 @@
     "simkhes-toyre",
     "∙",
     "masculine noun",
-    "שׂמחת־תּורה or שׂימחת־תּורה"
+    "שׂמחת־תּורה, שׂימחת־תּורה"
   ],
   ["nature", "natur", "∙", "feminine noun", "נאַטור"],
   ["train, railroad", "ban", "∙", "feminine noun", "באַן"],
@@ -7104,7 +7098,7 @@
   ["serenity, tranquility", "shalve", "∙", "feminine noun", "שלווה"],
   ["relevant", "shayekhdik", "∙", "adjective", "שייכדיק"],
   ["Hebrew (modern)", "ivrit", "∙", "neuter noun", "עבֿרריתּ"],
-  ["Tammuz, 10th month of the Jewish calendar", "tamez / tamuz", "∙", "masculine noun", "תּמוז"],
+  ["Tammuz, 10th month of the Jewish calendar", "tamez/tamuz", "∙", "masculine noun", "תּמוז"],
   ["reverse, opposite, wrong", "farkert", "∙", "adjective", "פֿאַרקערט"],
   ["slide", "rukn", "rook'∙n", "verb", "רוקן"],
   ["slander, vilification", "loshn-hore", "losh'∙n∙hor∙eh", "neuter noun", "לשון־הרע"],
@@ -7284,7 +7278,7 @@
   ["harvest time", "harbsttsayt", "∙", "feminine noun", "האַרבסטצײַט"],
   ["comedian", "komiker", "∙", "masculine noun", "קאָמיקער"],
   ["right, fair, just", "gerekht", "∙", "adjective", "גערעכט"],
-  ["mention, cite, refer to", "dermanen/dermonen", "∙", "verb", "דערמאַנען or דערמאָנען"],
+  ["mention, cite, refer to", "dermanen/dermonen", "∙", "verb", "דערמאַנען, דערמאָנען"],
   ["dog", "hunt", "hoont", "masculine noun", "הונט"],
   ["luck, good fortune, happiness", "glik", "∙", "neuter noun", "גליק"],
   ["soldier", "zelner", "∙", "masculine noun", "זעלנער"],
@@ -7547,7 +7541,7 @@
   ["genre", "zhaner", "∙", "masculine noun", "זשאַנער"],
   ["lock", "shlos (shleser)", "shlos (shles'∙er)", "masculine noun", "שלאָס"],
   ["by force, forcefully", "bgvald", "beh∙gvald'", "adverb", "בגוואַלד"],
-  ["improper, obscene", "umonshtendik", "oom·on·shten׳·dik", "adjective", "אומאָנשטענדיק"],
+  ["improper, obscene", "umonshtendik", "oom·on·shten'·dik", "adjective", "אומאָנשטענדיק"],
   ["ready, willing", "greyt", "∙", "adjective", "גרייט"],
   ["hangman", "talyen (talyonim)", "∙", "masculine noun", "תּלין"],
   ["down", "anider", "∙", "adverb", "אַנידער"],
@@ -7667,13 +7661,7 @@
   ],
   ["studies", "limudim", "li·mood'·im", "plural noun", "לימודים"],
   ["a pity! a waste of...", "a shod!", "a shod", "interjection", "! אַ שאָד"],
-  [
-    "be ashamed of/to",
-    "shemen zikh mit/tsu",
-    "shem'·en zikh mit/tsoo",
-    "verb",
-    "שעמען זיך מיט or צו"
-  ],
+  ["be ashamed of/to", "shemen zikh mit/tsu", "shem'·en zikh mit/tsoo", "verb", "שעמען זיך מיט/צו"],
   ["flower", "blum", "∙", "feminine noun", "בלום"],
   ["Arabia", "arabye", "a∙rab'∙yeh", "feminine noun", "אַראַביע"],
   ["what, how (admiration, surprise)", "sara", "∙", "adjective or interjection", "סאַראַ"],
@@ -7972,7 +7960,7 @@
   ["coward", "pakhdn (pakhdonim)", "∙", "masculine noun", "פּחדון"],
   ["component", "komponent", "kom·poh'·nent", "masculine noun", "קאָמפּאָנענט"],
   ["silvery", "zilberdik", "∙", "adjective", "זילבערדיק"],
-  ["suddenly, all at once", "oyf/mit a mol", "∙", "adverb", "אויף or מיט אַ  מאָל"],
+  ["suddenly, all at once", "oyf/mit a mol", "∙", "adverb", "אויף/מיט אַ  מאָל"],
   ["kiss", "kushn", "∙", "verb", "קושן"],
   ["conquer, defeat", "zign", "zig'·n", "verb", "זיגן"],
   ["subscription", "abonanament", "a∙bo∙na∙ment'", "masculine noun", "אַבאָנאַנאַמענט"],
@@ -7993,7 +7981,7 @@
   ["lesson, lecture", "lektsye", "∙", "feminine noun", "לעקציע"],
   ["mislay, misplace; found, establish", "farleygn", "∙", "verb", "פֿאַרלייגן"],
   ["cylinder, top-hat", "tsilinder", "∙", "masculine noun", "צילינדער"],
-  ["to it, moreover, in addition,", "dertsu", "∙", "adverb", "דערצו"],
+  ["to it, moreover, in addition", "dertsu", "∙", "adverb", "דערצו"],
   [
     "phenomenon, manifestation",
     "dershaynung",
@@ -8024,7 +8012,7 @@
     "באַשטאַנדטייל"
   ],
   ["baggage, luggage", "bagazh", "bag∙azh'", "masculine noun", "באַגאַזש"],
-  ["back", "tsurikvegs", "∙", "adverb", "צוריקוועגס or צוריק וועגס"],
+  ["back", "tsurikvegs", "∙", "adverb", "צוריקוועגס, צוריק וועגס"],
   ["subway", "unterban", "∙", "feminine noun", "אונטערבאַן"],
   ["support, sustain; bear out, uphold", "unterhaltn", "∙", "verb", "אונטערהאַלטן"],
   ["speed", "yogn", "∙", "verb", "יאָגן"],
@@ -8045,7 +8033,7 @@
   ],
   ["many, much", "fil", "∙", "adjective", "פֿיל"],
   ["sleepless", "shlofloz", "∙", "adjective", "שלאָפֿלאָז"],
-  ["Penina", "penina / penine", "∙", "noun (name)", "פּנינה"],
+  ["Penina", "penina/penine", "∙", "noun (name)", "פּנינה"],
   ["awful, terrible, horrible", "shreklekh", "shrek'∙lekh", "adjective", "שרעקלעך"],
   ["return; restore; refund", "umkern", "oom'·ker·n", "verb", "אומקערן"],
   ["hold; hold for a moment", "tsuhaltn", "∙", "verb", "צוהאַלטן"],
@@ -8321,7 +8309,7 @@
   ["represent", "fartretn", "far'∙tret∙n", "verb", "פֿאַרטרעטן"],
   ["ask, request, beg", "betn", "∙", "verb", "בעטן"],
   ["bet, wager", "farvetn zikh", "far∙vet'∙n zikh", "intransitive verb", "פֿאַרוועטן זיך"],
-  ["natural, lifelike", "naturlikh / natirlekh", "∙", "adjective", "נאַטורליך or נאַטירעלך"],
+  ["natural, lifelike", "naturlikh/natirlekh", "∙", "adjective", "נאַטורליך, נאַטירעלך"],
   ["fictional", "fiktiv", "fik·tiv'", "adjective", "פֿיקטיוו"],
   ["comb (one's hair)", "farkamen zikh", "far·kam'·en zikh", "verb", "פֿאַרקאַמען זיך"],
   ["anniversary", "yortog", "∙", "masculine noun", "יאָרטאָג"],
