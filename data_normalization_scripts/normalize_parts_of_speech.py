@@ -2,10 +2,7 @@ import json
 
 
 '''
-   Note: I added to the below three additional parts of speech:
-      1. reflexive verb (125 entries)
-      2. transitive or reflexive verb (one entry)
-      3. intransitive or reflexive verb (three entries)
+   Note: I added to the below one additional part of speech: reflexive verb (129 entries)
 
 '''
 pos_dict = {"(m.)": "masculine noun",
@@ -14,7 +11,7 @@ pos_dict = {"(m.)": "masculine noun",
 "(f.)": "feminine noun",
 "(v.)": "verb",
 "(v. intrans.)": "intransitive verb",
-"(conj.)": "conjuntion",
+"(conj.)": "conjunction",
 "(adv.)": "adverb",
 "(prep.)": "preposition",
 "(f./n/)": "feminine or neuter noun",
