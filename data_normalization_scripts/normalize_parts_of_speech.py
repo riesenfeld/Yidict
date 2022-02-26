@@ -1,5 +1,13 @@
 import json
 
+
+'''
+   Note: I added to the below three additional parts of speech:
+      1. reflexive verb (125 entries)
+      2. transitive or reflexive verb (one entry)
+      3. intransitive or reflexive verb (three entries)
+
+'''
 pos_dict = {"(m.)": "masculine noun",
 "(adj.)": "adjective",
 "(n.)": "neuter noun",
