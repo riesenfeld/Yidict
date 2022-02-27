@@ -13,7 +13,9 @@
       <p>
         Bear in mind that YIVO orthographical standards are not necessarily representative of how
         Yiddish is written (or spoken) in the real world. At the bottom of this page, you will find
-        a table of common deviations from YIVO-recommended orthography.
+        a table of common deviations from YIVO-recommended orthography. Additionally, Yiddish words
+        derived from Hebrew and Aramaic frequently do not conform to the rules of YIVO
+        transliteration, as they tend to preserve their original spellings from those languages.
       </p>
     </section>
     <section class="table-area">
