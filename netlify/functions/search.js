@@ -32,6 +32,9 @@ const normalizeYiddish = function (str) {
   ]
 
   let diacriticsRange = /[\u0590-\u05c7]/gu
+  let geresh = "\u05F3"
+  let gershayim = "\u05F4"
+  let es = "\u05E1\u05F3" // the s' abbreviation
 
   for (let i = 0; i < digraphs.length; i++) {
     str = str.replaceAll(digraphs[i][0], digraphs[i][1])
@@ -40,6 +43,9 @@ const normalizeYiddish = function (str) {
     str = str.replaceAll(sofitLetters[i][0], sofitLetters[i][1])
   }
   str = str.replaceAll(diacriticsRange, "")
+  str = str.replaceAll(es, "\u05E2\u05E1 ") //replace "s'" with "es "
+  str = str.replaceAll(geresh, "")
+  str = str.replaceAll(gershayim, "")
 
   return str
 }
