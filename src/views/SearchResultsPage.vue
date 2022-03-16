@@ -36,6 +36,9 @@ export default {
 
       this.searchResults = response
     },
+    clearPage() {
+      this.searchResults = null
+    },
   },
   mounted() {
     if (this.$route.query.exact == undefined || this.$route.query.exact == false) {
@@ -44,6 +47,7 @@ export default {
   },
   watch: {
     $route(to) {
+      this.clearPage()
       if (to.query.exact == undefined || to.query.exact == false) {
         this.fetchResults(to.query.term, to.query.type, "false")
       } else this.fetchResults(to.query.term, to.query.type, "true")
