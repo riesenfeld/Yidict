@@ -7,7 +7,7 @@
           'router-link': true,
           'current-page': matchesCurrentRoute('/') || matchesCurrentRoute('/search'),
         }"
-        ><span>Search Dictionary</span>
+        ><span>Search dictionary</span>
       </router-link>
       <router-link to="/usage" :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/usage') }"
         ><span>Usage guide</span>
