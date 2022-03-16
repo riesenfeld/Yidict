@@ -3,19 +3,18 @@
     <section class="explanation">
       <h3>YIVO Transliteration</h3>
       <p>
-        The <em>Yidisher Visnshaftlekher Institut</em> (<em lang="yi"
-          >ייִדישער װיסנשאַפֿטלעכער אינסטיטוט</em
-        >), called YIVO for short, is the one of the primary pedagogical institutions of the Yiddish
-        language, and a widely-accepted standards body in the domain of Yiddish-as-a-second-language
-        education. In that capacity, they have provided a guide for how one may write Yiddish words
-        using a Latin alphabet. This guide is provided as a table below.
+        The <em>Yidisher Visnshaftlekher Institut</em> (<em lang="yi">ייִדישער װיסנשאַפֿטלעכער אינסטיטוט</em>),
+        called YIVO for short, is the one of the primary pedagogical institutions of the Yiddish language, and a
+        widely-accepted standards body in the domain of Yiddish-as-a-second-language education. In that capacity,
+        they have provided a guide for how one may write Yiddish words using a Latin alphabet. This guide is
+        provided as a table below.
       </p>
       <p>
-        Bear in mind that YIVO orthographical standards are not necessarily representative of how
-        Yiddish is written (or spoken) in the real world. At the bottom of this page, you will find
-        a table of common deviations from YIVO-recommended orthography. Additionally, Yiddish words
-        derived from Hebrew and Aramaic frequently do not conform to the rules of YIVO
-        transliteration, as they tend to preserve their original spellings from those languages.
+        Bear in mind that YIVO orthographical standards are not necessarily representative of how Yiddish is
+        written (or spoken) in the real world. At the bottom of this page, you will find a table of common
+        deviations from YIVO-recommended orthography. Additionally, Yiddish words derived from Hebrew and Aramaic
+        frequently do not conform to the rules of YIVO transliteration, as they tend to preserve their original
+        spellings from those languages.
       </p>
     </section>
     <section class="table-area">
