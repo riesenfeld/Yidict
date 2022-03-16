@@ -129,7 +129,6 @@ const getMatches = function (searchTerm, searchType, exact = "false") {
     let normalizedArray = normalizeArray(entry[index], searchType)
     let normalizedSearchTerm = normalize(searchTerm, searchType)
     if (doesMatch(normalizedArray, normalizedSearchTerm)) {
-      console.log(words[5427])
       let matchDegree = includesExactly(normalizedArray, normalizedSearchTerm)
       if (matchDegree == 1) {
         perfectMatches.push(entry)
@@ -165,8 +164,8 @@ exports.handler = async function (event) {
     //Join the arrays inside each match
     matches[i] = matches[i].map((category) => category.join(", "))
     //If romanization or pronunciation contains (plural: ...), prepend that with a semicolon
-    matches[i][1] = matches[i][1].replaceAll(", (plural:", "; (plural:")
-    matches[i][2] = matches[i][2].replaceAll(", (plural:", "; (plural:")
+    matches[i][1] = matches[i][1].replace(/, \(plural:/g, "; (plural:")
+    matches[i][2] = matches[i][2].replace(/, \(plural:/g, "; (plural:")
   }
 
   return {
