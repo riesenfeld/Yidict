@@ -27,7 +27,3 @@ pnpm-debug.log*
 
 # Prettier config
 .prettierrc.js
-
-# To remove when done
-normalization_helper.py
-test.json
