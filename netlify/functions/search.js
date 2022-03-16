@@ -1,4 +1,5 @@
-const words = require("../data/words.json")
+// const words = require("../data/words.json")
+const words = require("../data/test.json")
 
 const getIndexOfSearchType = function (searchType) {
   if (searchType == "yiddish") {
@@ -78,16 +79,21 @@ const normalizePunctuationAndWhitespace = function (str) {
   return str.trim()
 }
 
-const includesExactly = function (str, substr) {
+const includesExactly = function (array, str) {
   // str = " " + str + " "
-
-  if (str.startsWith(substr + " ")) {
+  if (array.includes(str)) {
     return true
-  } else if (str.endsWith(" " + substr)) {
-    return true
-  } else if (str.includes(" " + substr + " ")) {
-    return true
-  } else return false
+  }
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].startsWith(str + " ")) {
+      return true
+    } else if (array[i].endsWith(" " + str)) {
+      return true
+    } else if (array[i].includes(" " + str + " ")) {
+      return true
+    }
+  }
+  return false
 }
 
 const normalize = function (str, lang = "english") {
@@ -97,14 +103,35 @@ const normalize = function (str, lang = "english") {
   } else return str.toLowerCase()
 }
 
+const normalizeArray = function (arr, lang = "english") {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = normalize(arr[i], lang)
+  }
+  return arr
+}
+
+const doesMatch = function (array, searchTerm) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].includes(searchTerm)) {
+      return true
+    }
+  }
+  return false
+}
+
 const getMatches = function (searchTerm, searchType, exact = "false") {
   let index = getIndexOfSearchType(searchType)
-  let matches = words.filter((word) =>
-    normalize(word[index], searchType).includes(normalize(searchTerm, searchType))
+  // let matches = words.filter((word) =>
+  //   normalize(word[index], searchType).includes(normalize(searchTerm, searchType))
+  // )
+
+  let matches = words.filter((entry) =>
+    doesMatch(normalizeArray(entry[index], searchType), normalize(searchTerm, searchType))
   )
+
   if (exact == "true") {
     return matches.filter((match) =>
-      includesExactly(normalize(match[index], searchType), normalize(searchTerm, searchType))
+      includesExactly(normalizeArray(match[index], searchType), normalize(searchTerm, searchType))
     )
   } else return matches
 }
@@ -123,6 +150,14 @@ exports.handler = async function (event) {
     return [match[0], match[4], match[1], match[2], match[3]]
   }
   matches = matches.map(reorder)
+
+  for (let i = 0; i < matches.length; i++) {
+    //Join the arrays inside each match
+    matches[i] = matches[i].map((category) => category.join(", "))
+    //If romanization or pronunciation contains (plural: ...), prepend that with a semicolon
+    matches[i][1] = matches[i][1].replaceAll(", (plural:", "; (plural:")
+    matches[i][2] = matches[i][2].replaceAll(", (plural:", "; (plural:")
+  }
 
   return {
     statusCode: 200,
