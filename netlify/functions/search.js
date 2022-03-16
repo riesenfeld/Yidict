@@ -1,5 +1,4 @@
-// const words = require("../data/words.json")
-const words = require("../data/test.json")
+const words = require("../data/words.json")
 
 const getIndexOfSearchType = function (searchType) {
   if (searchType == "yiddish") {
