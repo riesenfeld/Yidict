@@ -9,41 +9,20 @@
         "<p><strong>ער-</strong></p> <p><strong>גוט-ער</strong></p> <p>gut<strong>-er</strong></p> <p><strong>.דער גוטער מאַן איז דאָ</strong></p> <p></p> <p>der gut<strong>er</strong> man iz do.</p> <p>The <strong>good</strong> man is here.</p>",
         "<p>When modifying a <strong><u>singular Masculine</u> </strong>noun.</p>"
       ],
-      [
-        "<p><strong>ער-</strong></p> <p><strong>גוט-ער</strong></p> <p>gut<strong>-</strong><strong>er</strong></p> <p><strong>.איך גיב אַ בוך דער גוטער פֿרוי</strong></p> <p>ikh gib a bukh der gut<strong>er</strong> froy.</p> <p>I give a book to the <strong>good</strong> woman.</p>",
-        "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך זע די גוטע פֿרוי</strong></p> <p>ikh ze di gut<strong>e</strong> froy.</p> <p>I see the <strong>good</strong> woman.</p>",
-        "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.די גוטע פֿרוי איז דאָ</strong></p> <p>di gut<strong>e</strong> froy iz do.</p> <p>The <strong>good</strong> woman is here.</p>",
-        "<p>When modifying a <strong><u>singular Feminine</u> </strong>noun.</p>"
-      ],
+      ["<p><strong>ער-</strong></p> <p><strong>גוט-ער</strong></p> <p>gut<strong>-</strong><strong>er</strong></p> <p><strong>.איך גיב אַ בוך דער גוטער פֿרוי</strong></p> <p>ikh gib a bukh der gut<strong>er</strong> froy.</p> <p>I give a book to the <strong>good</strong> woman.</p>", "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך זע די גוטע פֿרוי</strong></p> <p>ikh ze di gut<strong>e</strong> froy.</p> <p>I see the <strong>good</strong> woman.</p>", "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.די גוטע פֿרוי איז דאָ</strong></p> <p>di gut<strong>e</strong> froy iz do.</p> <p>The <strong>good</strong> woman is here.</p>", "<p>When modifying a <strong><u>singular Feminine</u> </strong>noun.</p>"],
       [
         "<p><strong>ן-</strong></p> <p><strong>גוט-ן</strong></p> <p>gut<strong>-n</strong></p> <p>(or <strong>ען-</strong>, when the adjective base ends in <strong>ם-</strong>, or a vowel, or a dipthong, e.g.: <strong>פֿרומ-ען</strong>)</p> <p>(or <strong>עם-</strong>, when the adjective base ends in <strong>ן-</strong>, e.g.: <strong>קליינ-עם</strong>)</p> <p>frum<strong>-en</strong></p> <p>kleyn<strong>-em</strong></p> <p><strong>.איך גיב אַ בוך דעם גוטן מאַן</strong></p> <p><strong>.איך גיב אַ בוך דעם פֿרומען מאַן</strong></p> <p><strong>.איך גיב אַ בוך דעם קלײנעם מאַן</strong></p> <p>ikh gib a bukh dem gut<strong>n</strong> man.</p> <p>ikh gib a bukh dem frum<strong>en</strong> man.</p> <p>ikh gib a bukh dem kleyn<strong>em</strong> man.</p> <p>I give a book to the <strong>good</strong> man.</p> <p>I give a book to the <strong>religious</strong> man.</p> <p>I give a book to the<strong> small</strong> man.</p>",
         "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך זע דאָס גוטע קינד</strong></p> <p>ikh ze dos gute kind.</p> <p>I see the <strong>good</strong> child.</p>",
         "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.דאָס גוטע קינד איז דאָ</strong></p> <p>dos gut<strong>e</strong> kind iz do.</p> <p>The <strong>good</strong> child is here.</p>",
         "<p>When modifing a <strong><u>singular Neuter</u></b> noun<b> </b><b>and</b> preceded by the definite article <b>דאָס</b></strong> (dos).</p>"
       ],
-      [
-        "<p><strong>-</strong></p> <p><strong>גוט</strong></p> <p>gut</p> <p><strong>.איך גיב אַ בוך אַ גוט קינד</strong></p> <p>ikh gib a bukh <strong>a gut</strong> kind.</p> <p>I give a book to <strong>a good</strong> child.</p>",
-        "<p><strong>-</strong></p> <p><strong>גוט</strong></p> <p>gut</p> <p><strong>.איך זע אַ גוט קינד</strong></p> <p>ikh ze <strong>a gut</strong> kind.</p> <p>I see <strong>a good</strong> child.</p>",
-        "<p><strong>-</strong></p> <p><strong>גוט</strong></p> <p>gut</p> <p><strong>.אַ גוט קינד איז דאָ</strong></p> <p><strong>a gut</strong> kind iz do.</p> <p><strong>A good</strong> child is here.</p>",
-        "<p>When modifying a <u><strong>singular Neuter</strong></u> noun <strong>and</strong> preceded by the indefinite articles <strong>אַ </strong> (a) or <strong>אַן </strong>(an).</p>"
-      ],
-      [
-        "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך גיב אַ בוך די גוטע קינדער</strong></p> <p>ikh gib a bukh <strong>di gute</strong> kinder.</p> <p>I give <strong>a book</strong> to the good children.</p>",
-        "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך זע די גוטע קינדער</strong></p> <p>ikh ze <strong>di gute</strong> kinder.</p> <p>I see <strong>the good</strong> children.</p>",
-        "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.די גוטע קינדער זענען דאָ</strong></p> <p>di gut<strong>e</strong> kinder zenen do.</p> <p>The <strong>good</strong> children are here.</p>",
-        "<p>When modifying<strong> <u>any</u> Plural </strong>noun.</p>"
-      ]
+      ["<p><strong>-</strong></p> <p><strong>גוט</strong></p> <p>gut</p> <p><strong>.איך גיב אַ בוך אַ גוט קינד</strong></p> <p>ikh gib a bukh <strong>a gut</strong> kind.</p> <p>I give a book to <strong>a good</strong> child.</p>", "<p><strong>-</strong></p> <p><strong>גוט</strong></p> <p>gut</p> <p><strong>.איך זע אַ גוט קינד</strong></p> <p>ikh ze <strong>a gut</strong> kind.</p> <p>I see <strong>a good</strong> child.</p>", "<p><strong>-</strong></p> <p><strong>גוט</strong></p> <p>gut</p> <p><strong>.אַ גוט קינד איז דאָ</strong></p> <p><strong>a gut</strong> kind iz do.</p> <p><strong>A good</strong> child is here.</p>", "<p>When modifying a <u><strong>singular Neuter</strong></u> noun <strong>and</strong> preceded by the indefinite articles <strong>אַ </strong> (a) or <strong>אַן </strong>(an).</p>"],
+      ["<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך גיב אַ בוך די גוטע קינדער</strong></p> <p>ikh gib a bukh <strong>di gute</strong> kinder.</p> <p>I give <strong>a book</strong> to the good children.</p>", "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.איך זע די גוטע קינדער</strong></p> <p>ikh ze <strong>di gute</strong> kinder.</p> <p>I see <strong>the good</strong> children.</p>", "<p><strong>ע-</strong></p> <p><strong>גוט-ע</strong></p> <p>gut<strong>-</strong><strong>e</strong></p> <p><strong>.די גוטע קינדער זענען דאָ</strong></p> <p>di gut<strong>e</strong> kinder zenen do.</p> <p>The <strong>good</strong> children are here.</p>", "<p>When modifying<strong> <u>any</u> Plural </strong>noun.</p>"]
     ]
   },
   "possessivePronouns": {
     "title": "Possessive Pronouns",
-    "columnNames": [
-      "Interrogative \"whose\" (Yiddish)",
-      "Plural (Yiddish)",
-      "Plural (English)",
-      "Singular (Yiddish)",
-      "Singular (English)"
-    ],
+    "columnNames": ["Interrogative \"whose\" (Yiddish)", "Plural (Yiddish)", "Plural (English)", "Singular (Yiddish)", "Singular (English)"],
     "rows": [
       ["<p>װעמענס</p>", "<p>אונדזער</p>", "<p>our</p>", "<p>מײַן</p>", "<p>my</p>"],
       ["<p>װעמענס</p>", "<p>אײַער</p>", "<p>your</p>", "<p>דײַן</p>", "<p>your</p>"],
@@ -90,29 +69,11 @@
     "title": "Indefinite and Relative Pronouns for People",
     "columnNames": ["Possessive", "Dative", "Accusative", "Nominative", "English"],
     "rows": [
-      ["<p>װעמענס</p>", "<p>װעמען</p>", "<p>װעמען</p>", "<p>װער</p>", "<p>Who/Whom/Whose</p>"],
-      ["<p>עמעצנס</p>", "<p>עמעצן</p>", "<p>עמעצן</p>", "<p>עמעצער</p>", "<p>Someone/Somebody</p>"],
-      [
-        "<p>יעדערנס</p>",
-        "<p>יעדערן</p>",
-        "<p>יעדערן</p>",
-        "<p>יעדערער</p>",
-        "<p>Everyone/Everybody (masculine)</p>"
-      ],
-      [
-        "<p>יעדערערס</p>",
-        "<p>יעדערער</p>",
-        "<p>יעדערע</p>",
-        "<p>יעדערע</p>",
-        "<p>Everyone/Everybody (feminine)</p>"
-      ],
-      [
-        "<p>קײנעמס נישט</p>",
-        "<p>קײנעם נישט</p>",
-        "<p>קײנעם נישט</p>",
-        "<p>קײנער נישט</p>",
-        "<p>No one/Nobody</p>"
-      ]
+      ["<p>װעמענס</p>", "<p>װעמען</p>", "<p>װעמען</p>", "<p>װער</p>", "<p>Who, Whom, Whose</p>"],
+      ["<p>עמעצנס</p>", "<p>עמעצן</p>", "<p>עמעצן</p>", "<p>עמעצער</p>", "<p>Someone, Somebody</p>"],
+      ["<p>יעדערנס</p>", "<p>יעדערן</p>", "<p>יעדערן</p>", "<p>יעדערער</p>", "<p>Everyone, Everybody (masculine)</p>"],
+      ["<p>יעדערערס</p>", "<p>יעדערער</p>", "<p>יעדערע</p>", "<p>יעדערע</p>", "<p>Everyone, Everybody (feminine)</p>"],
+      ["<p>קײנעמס נישט</p>", "<p>קײנעם נישט</p>", "<p>קײנעם נישט</p>", "<p>קײנער נישט</p>", "<p>No one, Nobody</p>"]
     ]
   },
   "indefiniteAndRelativePronounsForObjects": {

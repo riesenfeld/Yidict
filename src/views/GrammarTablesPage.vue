@@ -131,4 +131,9 @@ export default {
 .table-title {
   margin-bottom: 3vh;
 }
+@media (max-width: 500px) {
+  .table-area {
+    font-size: 0.6rem;
+  }
+}
 </style>
