@@ -3,7 +3,7 @@
     <router-link to="/" class="router-link router-link-home">
       <div class="logo-area">
         <!-- logo source: https://icons8.com/icon/25546/peacock -->
-        <img src="@/assets/logo.svg" id="logo" alt="golden peacock logo" />
+        <img src="@/assets/logo.svg" id="logo-image" alt="golden peacock logo" />
         <span class="site-name"><span>Yidict</span> | <span>ייִדיקט</span></span>
       </div>
     </router-link>
@@ -53,6 +53,10 @@ export default {
   margin-left: 1vw;
   font-size: 5vh;
 }
+#logo-image {
+  height: min(9.5vh, 50px);
+  width: min(9.5vh, 50px);
+}
 .site-name {
   margin-left: 2vw;
 }
@@ -73,7 +77,11 @@ export default {
     height: 6vh;
   }
   .logo-area {
-    font-size: 3.5vh;
+    font-size: min(3.5vh, 2rem);
+  }
+  #logo-image {
+    height: min(5.5vh, 50px);
+    width: min(5.5vh, 50px);
   }
   .site-name {
     margin-left: 4vw;
