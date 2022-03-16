@@ -3,10 +3,7 @@
     <ContactForm v-if="submissionResult() == 'none'" />
     <div v-else-if="submissionResult() == 'success'" class="message-area">
       <h3 class="message-success">Submission successful</h3>
-      <p>
-        Should your message warrant a reply, I will respond to you at the email address you have
-        provided.
-      </p>
+      <p>Should your message warrant a reply, I will respond to you at the email address you have provided.</p>
       <p>Thank you for using Yidict!</p>
       <div class="return-links">
         <router-link to="/contact">Return to contact page</router-link>

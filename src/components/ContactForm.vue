@@ -7,8 +7,7 @@
     </div>
     <div class="form-item">
       <label for="message">Your message:</label>
-      <textarea name="message" id="message" cols="50" rows="10" v-model="message" required>
-      </textarea>
+      <textarea name="message" id="message" cols="50" rows="10" v-model="message" required> </textarea>
     </div>
     <div class="form-item">
       <label for="email">Your email address:</label>
@@ -56,6 +55,9 @@ export default {
 </script>
 
 <style scoped>
+form {
+  width: 40vw;
+}
 .form-item {
   display: flex;
   flex-direction: column;
@@ -77,5 +79,11 @@ button {
   padding: 5px 8px 5px 8px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px var(--shadow-color);
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90vw;
+  }
 }
 </style>
