@@ -57,7 +57,7 @@ export default {
        * which gets replaced by the canonically accurate value retrieved
        * by the serverless function fetchNumberOfEntries()
        **/
-      numberOfEntries: 5726,
+      numberOfEntries: 5734,
     }
   },
   methods: {
