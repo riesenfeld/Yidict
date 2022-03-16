@@ -9,9 +9,7 @@
         }"
         ><span>Search Dictionary</span>
       </router-link>
-      <router-link
-        to="/usage"
-        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/usage') }"
+      <router-link to="/usage" :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/usage') }"
         ><span>Usage guide</span>
       </router-link>
       <router-link
@@ -19,19 +17,13 @@
         :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/transliteration') }"
         ><span>Transliteration table</span>
       </router-link>
-      <router-link
-        to="/grammar"
-        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/grammar') }"
+      <router-link to="/grammar" :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/grammar') }"
         ><span>Grammar tables</span>
       </router-link>
-      <router-link
-        to="/about"
-        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/about') }"
+      <router-link to="/about" :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/about') }"
         ><span>About</span>
       </router-link>
-      <router-link
-        to="/contact"
-        :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/contact') }"
+      <router-link to="/contact" :class="{ 'router-link': true, 'current-page': matchesCurrentRoute('/contact') }"
         ><span>Contact</span>
       </router-link>
     </div>
@@ -88,5 +80,11 @@ export default {
 
 .current-page span {
   border-bottom: 2px solid white;
+}
+
+@media (max-width: 600px) {
+  .menu.active {
+    top: 6vh;
+  }
 }
 </style>
