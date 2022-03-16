@@ -1,5 +1,6 @@
 <template>
   <div id="contact-page">
+    <section>Text Text Text TO-DO</section>
     <ContactForm v-if="submissionResult() == 'none'" />
     <div v-else-if="submissionResult() == 'success'" class="message-area">
       <h3 class="message-success">Submission successful</h3>

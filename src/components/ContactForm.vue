@@ -13,7 +13,7 @@
       <label for="email">Your email address:</label>
       <input type="email" name="email" id="email" v-model="email" required />
     </div>
-    <button class="form-item">Submit</button>
+    <button class="form-item" @click="checkValidity">Submit</button>
   </form>
 </template>
 
@@ -41,6 +41,20 @@ export default {
         .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(obj[key]))
         .join("&")
     },
+    checkValidity() {
+      // This is a hack for Firefox for Android, which doesn't prod the user to correctly fill in forms
+      if (!document.forms["contact"].reportValidity()) {
+        if (this.subject.length < 1) {
+          document.forms["contact"]["subject"].focus()
+        } else if (this.message.length < 1) {
+          document.forms["contact"]["message"].focus()
+        } else if (this.email.length < 1) {
+          document.forms["contact"]["email"].focus()
+        } else {
+          document.forms["contact"]["email"].focus()
+        }
+      }
+    },
     submitForm() {
       fetch("/", {
         method: "POST",
@@ -56,7 +70,7 @@ export default {
 
 <style scoped>
 form {
-  width: 40vw;
+  width: max(40vw, 450px);
 }
 .form-item {
   display: flex;
@@ -79,6 +93,11 @@ button {
   padding: 5px 8px 5px 8px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px var(--shadow-color);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(1.5px);
 }
 
 @media (max-width: 600px) {
