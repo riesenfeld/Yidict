@@ -80,34 +80,34 @@ const normalizePunctuationAndWhitespace = function (str) {
 }
 
 const includesExactly = function (array, str) {
-  // str = " " + str + " "
   if (array.includes(str)) {
-    return true
+    return 1
   }
   for (let i = 0; i < array.length; i++) {
     if (array[i].startsWith(str + " ")) {
-      return true
+      return 2
     } else if (array[i].endsWith(" " + str)) {
-      return true
+      return 2
     } else if (array[i].includes(" " + str + " ")) {
-      return true
+      return 2
     }
   }
-  return false
+  return 0
 }
 
 const normalize = function (str, lang = "english") {
-  str = normalizePunctuationAndWhitespace(str)
+  let normalizedStr = normalizePunctuationAndWhitespace(str)
   if (lang == "yiddish") {
-    return normalizeYiddish(str)
-  } else return str.toLowerCase()
+    return normalizeYiddish(normalizedStr)
+  } else return normalizedStr.toLowerCase()
 }
 
 const normalizeArray = function (arr, lang = "english") {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = normalize(arr[i], lang)
-  }
-  return arr
+  let result = []
+  arr.forEach((el) => {
+    result.push(normalize(el, lang))
+  })
+  return result
 }
 
 const doesMatch = function (array, searchTerm) {
@@ -121,19 +121,30 @@ const doesMatch = function (array, searchTerm) {
 
 const getMatches = function (searchTerm, searchType, exact = "false") {
   let index = getIndexOfSearchType(searchType)
-  // let matches = words.filter((word) =>
-  //   normalize(word[index], searchType).includes(normalize(searchTerm, searchType))
-  // )
 
-  let matches = words.filter((entry) =>
-    doesMatch(normalizeArray(entry[index], searchType), normalize(searchTerm, searchType))
-  )
+  let perfectMatches = []
+  let nearMatches = []
+  let substringMatches = []
+
+  words.forEach((entry) => {
+    let normalizedArray = normalizeArray(entry[index], searchType)
+    let normalizedSearchTerm = normalize(searchTerm, searchType)
+    if (doesMatch(normalizedArray, normalizedSearchTerm)) {
+      console.log(words[5427])
+      let matchDegree = includesExactly(normalizedArray, normalizedSearchTerm)
+      if (matchDegree == 1) {
+        perfectMatches.push(entry)
+      } else if (matchDegree == 2) {
+        nearMatches.push(entry)
+      } else {
+        substringMatches.push(entry)
+      }
+    }
+  })
 
   if (exact == "true") {
-    return matches.filter((match) =>
-      includesExactly(normalizeArray(match[index], searchType), normalize(searchTerm, searchType))
-    )
-  } else return matches
+    return perfectMatches.concat(nearMatches)
+  } else return perfectMatches.concat(nearMatches, substringMatches)
 }
 
 exports.handler = async function (event) {
