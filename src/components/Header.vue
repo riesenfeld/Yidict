@@ -54,17 +54,36 @@ export default {
   font-size: 5vh;
 }
 .site-name {
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 .menu-button {
-  align-self: flex-start;
-  height: 5.5vh;
-  width: 5.5vh;
+  align-self: center;
+  height: 7.5vh;
+  width: 7.5vh;
   margin: 1vh;
   border: none;
   background-color: #00005000;
 }
 .menu-icon {
-  height: 5.5vh;
+  height: 7.5vh;
+}
+
+@media (max-width: 600px) {
+  #header {
+    height: 6vh;
+  }
+  .logo-area {
+    font-size: 3.5vh;
+  }
+  .site-name {
+    margin-left: 4vw;
+  }
+  .menu-button {
+    height: 4.5vh;
+    width: 4.5vh;
+  }
+  .menu-icon {
+    height: 4.5vh;
+  }
 }
 </style>
