@@ -95,4 +95,10 @@ export default {
   width: 100%;
   margin-bottom: 4vh;
 }
+
+@media (max-width: 600px) { 
+  #usage-guide-page section {
+    width: 90vw;
+  }
+}
 </style>
