@@ -164,8 +164,8 @@ exports.handler = async function (event) {
     //Join the arrays inside each match
     matches[i] = matches[i].map((category) => category.join(", "))
     //If romanization or pronunciation contains (plural: ...), prepend that with a semicolon
-    matches[i][1] = matches[i][1].replace(/, \(plural:/g, "; (plural:")
     matches[i][2] = matches[i][2].replace(/, \(plural:/g, "; (plural:")
+    matches[i][3] = matches[i][3].replace(/, \(plural:/g, "; (plural:")
   }
 
   return {
