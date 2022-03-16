@@ -120,4 +120,19 @@ h3 {
 .alternatives-table-area {
   width: 70vw;
 }
+
+@media (max-width: 500px) {
+  .table-area >>> .table-data-element {
+    font-size: 0.6rem;
+  }
+
+  .table-area >>> .table-data-element[data-column="Yiddish"],
+  .table-area >>> .table-data-element[data-column="Non-YIVO Character"],
+  .table-area >>> .table-data-element[data-column="YIVO Preferred Spelling"] {
+    font-size: 0.8rem;
+  }
+  .table-area >>> .table-header {
+    font-size: 0.5rem;
+  }
+}
 </style>
