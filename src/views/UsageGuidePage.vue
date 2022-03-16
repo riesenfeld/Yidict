@@ -35,10 +35,10 @@
         <ResultCard :result="exampleResult" />
       </div>
       <p>
-        The top row contains an English word and its Yiddish translation. The bottom row contains
-        the YIVO-standard transliteration of the Yiddish word, followed by any additional
-        pronunciation information, such as dialectical differences or where accents fall in a
-        Yiddish word, followed by the word's part-of-speech.
+        The <strong>top row</strong> contains an English word and its Yiddish translation. 
+        The <strong>bottom row</strong> containsthe YIVO-standard transliteration of the Yiddish word, 
+        followed by any additional pronunciation information, such as dialectical differences 
+        or where accents fall in a Yiddish word, followed by the word's part-of-speech.
       </p>
     </section>
   </div>

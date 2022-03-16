@@ -51,10 +51,7 @@
         <h3 v-if="$route.params.table != undefined" class="table-title">
           {{ getTableByName($route.params.table).title }}
         </h3>
-        <Table
-          v-if="$route.params.table != undefined"
-          :tableData="getTableByName($route.params.table)"
-        />
+        <Table v-if="$route.params.table != undefined" :tableData="getTableByName($route.params.table)" />
       </div>
     </div>
   </div>
@@ -120,6 +117,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 2vh;
+  width: min(80vw, 1200px);
 }
 .tables-all-or-one-link {
   font-size: 0.8rem;

@@ -6,8 +6,8 @@
         The <em>Yidisher Visnshaftlekher Institut</em> (<em lang="yi">ייִדישער װיסנשאַפֿטלעכער אינסטיטוט</em>),
         called YIVO for short, is the one of the primary pedagogical institutions of the Yiddish language, and a
         widely-accepted standards body in the domain of Yiddish-as-a-second-language education. In that capacity,
-        they have provided a guide for how one may write Yiddish words using a Latin alphabet. This guide is
-        provided as a table below.
+        they have provided a guide for how one may write Yiddish words using a Latin alphabet.
+        <strong> This guide is provided as a table below.</strong>
       </p>
       <p>
         Bear in mind that YIVO orthographical standards are not necessarily representative of how Yiddish is
@@ -84,7 +84,7 @@ section {
   margin-bottom: 4vh;
 }
 section.explanation {
-  width: 80vw;
+  width: 70vw;
 }
 section p {
   text-align: left;
@@ -121,10 +121,12 @@ h3 {
 }
 
 @media (max-width: 500px) {
+  section.explanation {
+    width: 80vw;
+  }
   .table-area >>> .table-data-element {
     font-size: 0.6rem;
   }
-
   .table-area >>> .table-data-element[data-column="Yiddish"],
   .table-area >>> .table-data-element[data-column="Non-YIVO Character"],
   .table-area >>> .table-data-element[data-column="YIVO Preferred Spelling"] {
