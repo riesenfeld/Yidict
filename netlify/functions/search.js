@@ -1,14 +1,6 @@
 const words = require("../data/words.json")
 const simplified = require("../data/simplified.json")
 
-// const getIndexOfSearchType = function (searchType) {
-//   if (searchType == "yiddish") {
-//     return 4
-//   } else if (searchType == "romanization") {
-//     return 1
-//   } else return 0
-// }
-
 const simplifyYiddish = function (str) {
   let digraphs = [
     // double vov
@@ -104,14 +96,6 @@ const simplify = function (str, lang = "english") {
   } else return simplifiedStr.toLowerCase()
 }
 
-// const simplifyArray = function (arr, lang = "english") {
-//   let result = []
-//   arr.forEach((el) => {
-//     result.push(simplify(el, lang))
-//   })
-//   return result
-// }
-
 const doesMatch = function (array, searchTerm) {
   for (let i = 0; i < array.length; i++) {
     if (array[i].includes(searchTerm)) {
@@ -122,8 +106,6 @@ const doesMatch = function (array, searchTerm) {
 }
 
 const getMatches = function (searchTerm, searchType, exact = "false") {
-  // let index = getIndexOfSearchType(searchType)
-
   let perfectMatches = []
   let nearMatches = []
   let substringMatches = []
@@ -141,21 +123,6 @@ const getMatches = function (searchTerm, searchType, exact = "false") {
       }
     }
   })
-
-  // words.forEach((entry) => {
-  //   let simplifiedArray = simplifyArray(entry[index], searchType)
-  //   let simplifiedSearchTerm = simplify(searchTerm, searchType)
-  //   if (doesMatch(simplifiedArray, simplifiedSearchTerm)) {
-  //     let matchDegree = includesExactly(simplifiedArray, simplifiedSearchTerm)
-  //     if (matchDegree == 1) {
-  //       perfectMatches.push(entry)
-  //     } else if (matchDegree == 2) {
-  //       nearMatches.push(entry)
-  //     } else {
-  //       substringMatches.push(entry)
-  //     }
-  //   }
-  // })
 
   if (exact == "true") {
     return perfectMatches.concat(nearMatches)
