@@ -24,7 +24,7 @@
       </p>
       <p>
         When <strong>unselected</strong>, a dictionary lookup will return all possible matches
-        against your search term. A search for the word <em>car</em>, for instance, will also return
+        against your search term, including matches that are internal to words. A search for the word <em>car</em>, for instance, will also return
         the dictionary entries for <em>carrot</em> and <em>scarf</em>, among many others.
       </p>
     </section>
@@ -36,7 +36,7 @@
       </div>
       <p>
         The <strong>top row</strong> contains an English word and its Yiddish translation. 
-        The <strong>bottom row</strong> containsthe YIVO-standard transliteration of the Yiddish word, 
+        The <strong>bottom row</strong> contains the YIVO-standard transliteration of the Yiddish word, 
         followed by any additional pronunciation information, such as dialectical differences 
         or where accents fall in a Yiddish word, followed by the word's part-of-speech.
       </p>

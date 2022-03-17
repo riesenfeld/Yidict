@@ -105,8 +105,12 @@ export default {
 
 @media (orientation: portrait) and (max-width: 800px) {
   #result-card {
-    /* width: 90%; */
     font-size: 0.8rem;
+  }
+}
+@media (orientation: portrait) and (max-width: 350px) {
+  #result-card {
+    font-size: 0.6rem;
   }
 }
 </style>
