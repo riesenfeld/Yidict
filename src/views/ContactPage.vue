@@ -1,6 +1,19 @@
 <template>
   <div id="contact-page">
-    <section>Text Text Text TO-DO</section>
+    <section>
+      <h3>Contact</h3>
+      <p>You may use the form below to get in touch with me about any matter.</p>
+      <p>
+        If you would like to suggest an entry to be added to the dictionary, please provide it in English and in
+        Yiddish, as well as a dictionary in which the word is attested, so that it may be cross-referenced for
+        accuracy.
+      </p>
+      <p>Additionally, if you spot a bug or an incorrect translation, please let me know.</p>
+      <p>
+        If your entry or correction is approved, I will gladly add your name or chosen moniker to the attributions
+        section of the <router-link to="/about">about page</router-link>.
+      </p>
+    </section>
     <ContactForm v-if="submissionResult() == 'none'" />
     <div v-else-if="submissionResult() == 'success'" class="message-area">
       <h3 class="message-success">Submission successful</h3>
@@ -50,6 +63,19 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+section {
+  width: 65vw;
+  margin-bottom: 5vh;
+}
+section h3 {
+  margin-bottom: 2vh;
+}
+section p {
+  text-align: left;
+  margin-bottom: 2vh;
 }
 .message-area {
   width: 60vw;
@@ -69,5 +95,11 @@ export default {
 .return-links {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 90vw;
+  }
 }
 </style>
