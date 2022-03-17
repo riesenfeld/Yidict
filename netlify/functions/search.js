@@ -4,42 +4,42 @@ const simplified = require("../data/simplified.json")
 const simplifyYiddish = function (str) {
   let digraphs = [
     // double vov
-    ["\u05F0", "\u05D5\u05D5"],
+    [/\u05F0/gu, /\u05D5\u05D5/gu],
     // vov yud
-    ["\u05F1", "\u05D5\u05D9"],
+    [/\u05F1/gu, /\u05D5\u05D9/gu],
     //double yud
-    ["\u05F2", "\u05D9\u05D9"],
+    [/\u05F2/gu, /\u05D9\u05D9/gu],
   ]
 
   let sofitLetters = [
     // langer khof
-    ["\u05DA", "\u05DB"],
+    [/\u05DA/gu, /\u05DB/gu],
     // shlos mem
-    ["\u05DD", "\u05DE"],
+    [/\u05DD/gu, /\u05DE/gu],
     // langer nun
-    ["\u05DF", "\u05E0"],
+    [/\u05DF/gu, /\u05E0/gu],
     // langer fey
-    ["\u05E3", "\u05E4"],
+    [/\u05E3/gu, /\u05E4/gu],
     // langer tsadek
-    ["\u05E5", "\u05E6"],
+    [/\u05E5/gu, /\u05E6/gu],
   ]
 
   let diacriticsRange = /[\u0590-\u05c7]/gu
-  let geresh = "\u05F3"
-  let gershayim = "\u05F4"
-  let es = "\u05E1\u05F3" // the s' abbreviation
+  let geresh = /\u05F3/gu
+  let gershayim = /\u05F4/gu
+  let es = /\u05E1\u05F3/gu // the s' abbreviation
 
-  str = str.replaceAll(diacriticsRange, "")
+  str = str.replace(diacriticsRange, "")
   for (let i = 0; i < digraphs.length; i++) {
-    str = str.replaceAll(digraphs[i][0], digraphs[i][1])
+    str = str.replace(digraphs[i][0], digraphs[i][1])
   }
   for (let i = 0; i < sofitLetters.length; i++) {
-    str = str.replaceAll(sofitLetters[i][0], sofitLetters[i][1])
+    str = str.replace(sofitLetters[i][0], sofitLetters[i][1])
   }
 
-  str = str.replaceAll(es, "\u05E2\u05E1 ") //replace "s'" with "es "
-  str = str.replaceAll(geresh, "")
-  str = str.replaceAll(gershayim, "")
+  str = str.replace(es, /\u05E2\u05E1\u0020/gu) //replace "s'" with "es "
+  str = str.replace(geresh, "")
+  str = str.replace(gershayim, "")
 
   return str.trim()
 }
