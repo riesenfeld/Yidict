@@ -2,7 +2,7 @@
   <div id="contact-page">
     <section>
       <h3>Contact</h3>
-      <p>You may use the form below to get in touch with me about any matter.</p>
+      <p>You may use the form below to get in touch with me regarding any matter.</p>
       <p>
         If you would like to suggest an entry to be added to the dictionary, please provide it in English and in
         Yiddish, as well as a dictionary in which the word is attested, so that it may be cross-referenced for
@@ -67,7 +67,7 @@ export default {
   padding-bottom: 10vh;
 }
 section {
-  width: 65vw;
+  width: min(65vw, 700px);
   margin-bottom: 5vh;
 }
 section h3 {
