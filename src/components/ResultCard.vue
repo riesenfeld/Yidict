@@ -8,9 +8,9 @@
       :data-category="dataCategories[index]"
       :aria-label="ariaLabels[index]"
       :lang="chooseLangAttribute(index)"
-      :dir="index == 1 ? 'rtl' : 'ltr'"
+      :dir="index == 1 ? 'auto' : 'ltr'"
     >
-      {{ result[index] }}
+      <span>&lrm;{{ result[index] }}</span>
     </div>
   </div>
 </template>
