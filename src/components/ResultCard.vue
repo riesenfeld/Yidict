@@ -7,7 +7,8 @@
       :style="gridItemPosition(index)"
       :data-category="dataCategories[index]"
       :aria-label="ariaLabels[index]"
-      :lang="index == 1 ? 'yi' : false"
+      :lang="chooseLangAttribute(index)"
+      :dir="index == 1 ? 'rtl' : 'ltr'"
     >
       {{ result[index] }}
     </div>
@@ -19,6 +20,10 @@ export default {
   name: "ResultCard",
   props: {
     result: Array,
+    exampleCardOverride: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
@@ -75,6 +80,29 @@ export default {
             gridColumnEnd: 7,
             borderLeft: "1px solid black",
           }
+      }
+    },
+    chooseLangAttribute(index) {
+      if (this.exampleCardOverride) {
+        switch (index) {
+          case 1:
+            return "yi"
+          default:
+            return "en"
+        }
+      } else {
+        switch (index) {
+          case 1:
+            //Yiddish
+            return "yi"
+          case 2:
+            //Yiddish transliterated with Latin characters (https://www.w3.org/International/articles/language-tags/#script)
+            return "yi-Latn"
+          case 3:
+            return "yi-Latn"
+          default:
+            return "en"
+        }
       }
     },
   },

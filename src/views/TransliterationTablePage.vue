@@ -3,9 +3,10 @@
     <section class="explanation">
       <h3>YIVO Transliteration</h3>
       <p>
-        The <em>Yidisher Visnshaftlekher Institut</em> (<em lang="yi">ייִדישער װיסנשאַפֿטלעכער אינסטיטוט</em>),
-        called YIVO for short, is the one of the primary pedagogical institutions of the Yiddish language, and a
-        widely-accepted standards body in the domain of Yiddish-as-a-second-language education. In that capacity,
+        The <em>Yidisher Visnshaftlekher Institut</em> (<em lang="yi" dir="rtl"
+          >ייִדישער װיסנשאַפֿטלעכער אינסטיטוט</em
+        >), called YIVO for short, is the one of the primary pedagogical institutions of the Yiddish language, and
+        a widely-accepted standards body in the domain of Yiddish-as-a-second-language education. In that capacity,
         they have provided a guide for how one may write Yiddish words using a Latin alphabet.
         <strong> This guide is provided as a table below.</strong>
       </p>

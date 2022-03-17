@@ -32,7 +32,7 @@
       <h3>How to read dictionary entries</h3>
       <p>Each result returned by a dictionary lookup is given in a card that looks like this:</p>
       <div class="centered-item">
-        <ResultCard :result="exampleResult" />
+        <ResultCard :result="exampleResult" :exampleCardOverride="true" />
       </div>
       <p>
         The <strong>top row</strong> contains an English word and its Yiddish translation. 
