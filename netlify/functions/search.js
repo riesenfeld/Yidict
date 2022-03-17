@@ -1,14 +1,15 @@
 const words = require("../data/words.json")
+const simplified = require("../data/simplified.json")
 
-const getIndexOfSearchType = function (searchType) {
-  if (searchType == "yiddish") {
-    return 4
-  } else if (searchType == "romanization") {
-    return 1
-  } else return 0
-}
+// const getIndexOfSearchType = function (searchType) {
+//   if (searchType == "yiddish") {
+//     return 4
+//   } else if (searchType == "romanization") {
+//     return 1
+//   } else return 0
+// }
 
-const normalizeYiddish = function (str) {
+const simplifyYiddish = function (str) {
   let digraphs = [
     // double vov
     ["\u05F0", "\u05D5\u05D5"],
@@ -36,25 +37,27 @@ const normalizeYiddish = function (str) {
   let gershayim = "\u05F4"
   let es = "\u05E1\u05F3" // the s' abbreviation
 
+  str = str.replaceAll(diacriticsRange, "")
   for (let i = 0; i < digraphs.length; i++) {
     str = str.replaceAll(digraphs[i][0], digraphs[i][1])
   }
   for (let i = 0; i < sofitLetters.length; i++) {
     str = str.replaceAll(sofitLetters[i][0], sofitLetters[i][1])
   }
-  str = str.replaceAll(diacriticsRange, "")
+
   str = str.replaceAll(es, "\u05E2\u05E1 ") //replace "s'" with "es "
   str = str.replaceAll(geresh, "")
   str = str.replaceAll(gershayim, "")
 
-  return str
+  return str.trim()
 }
 
-const normalizePunctuationAndWhitespace = function (str) {
+const simplifyPunctuationAndWhitespace = function (str) {
   //remove leading and trailing whitespace from search term
   str = str.trim()
 
   let substitutions = [
+    /plural:/g,
     /[,]/g,
     /[:]/g,
     /[;]/g,
@@ -62,10 +65,10 @@ const normalizePunctuationAndWhitespace = function (str) {
     /[!]/g,
     /[/]/g,
     /[-]/g,
-    /\s\(or\)\s/g,
     /[(]/g,
     /[)]/g,
     /\.\.\./g,
+    /\./g,
   ]
 
   for (let i = 0; i < substitutions.length; i++) {
@@ -94,20 +97,20 @@ const includesExactly = function (array, str) {
   return 0
 }
 
-const normalize = function (str, lang = "english") {
-  let normalizedStr = normalizePunctuationAndWhitespace(str)
+const simplify = function (str, lang = "english") {
+  let simplifiedStr = simplifyPunctuationAndWhitespace(str)
   if (lang == "yiddish") {
-    return normalizeYiddish(normalizedStr)
-  } else return normalizedStr.toLowerCase()
+    return simplifyYiddish(simplifiedStr)
+  } else return simplifiedStr.toLowerCase()
 }
 
-const normalizeArray = function (arr, lang = "english") {
-  let result = []
-  arr.forEach((el) => {
-    result.push(normalize(el, lang))
-  })
-  return result
-}
+// const simplifyArray = function (arr, lang = "english") {
+//   let result = []
+//   arr.forEach((el) => {
+//     result.push(simplify(el, lang))
+//   })
+//   return result
+// }
 
 const doesMatch = function (array, searchTerm) {
   for (let i = 0; i < array.length; i++) {
@@ -119,26 +122,40 @@ const doesMatch = function (array, searchTerm) {
 }
 
 const getMatches = function (searchTerm, searchType, exact = "false") {
-  let index = getIndexOfSearchType(searchType)
+  // let index = getIndexOfSearchType(searchType)
 
   let perfectMatches = []
   let nearMatches = []
   let substringMatches = []
 
-  words.forEach((entry) => {
-    let normalizedArray = normalizeArray(entry[index], searchType)
-    let normalizedSearchTerm = normalize(searchTerm, searchType)
-    if (doesMatch(normalizedArray, normalizedSearchTerm)) {
-      let matchDegree = includesExactly(normalizedArray, normalizedSearchTerm)
+  simplified.forEach((entry) => {
+    let simplifiedSearchTerm = simplify(searchTerm, searchType)
+    if (doesMatch(entry[searchType], simplifiedSearchTerm)) {
+      let matchDegree = includesExactly(entry[searchType], simplifiedSearchTerm)
       if (matchDegree == 1) {
-        perfectMatches.push(entry)
+        perfectMatches.push(words[entry.id])
       } else if (matchDegree == 2) {
-        nearMatches.push(entry)
+        nearMatches.push(words[entry.id])
       } else {
-        substringMatches.push(entry)
+        substringMatches.push(words[entry.id])
       }
     }
   })
+
+  // words.forEach((entry) => {
+  //   let simplifiedArray = simplifyArray(entry[index], searchType)
+  //   let simplifiedSearchTerm = simplify(searchTerm, searchType)
+  //   if (doesMatch(simplifiedArray, simplifiedSearchTerm)) {
+  //     let matchDegree = includesExactly(simplifiedArray, simplifiedSearchTerm)
+  //     if (matchDegree == 1) {
+  //       perfectMatches.push(entry)
+  //     } else if (matchDegree == 2) {
+  //       nearMatches.push(entry)
+  //     } else {
+  //       substringMatches.push(entry)
+  //     }
+  //   }
+  // })
 
   if (exact == "true") {
     return perfectMatches.concat(nearMatches)
