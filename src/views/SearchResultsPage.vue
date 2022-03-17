@@ -60,12 +60,11 @@ export default {
 #search-results {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   width: 90%;
   min-height: 90vh;
   margin-left: 5%;
-  /* background-color: #aaaaaaaa; */
+  padding-bottom: 5vh;
 }
 .no-matches-found-message {
   color: red;
