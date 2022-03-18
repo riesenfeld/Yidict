@@ -62,6 +62,9 @@ export default {
       ],
     }
   },
+  created() {
+    document.title = "Usage Guide | Yidict"
+  },
 }
 </script>
 

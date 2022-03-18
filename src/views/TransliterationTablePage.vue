@@ -68,6 +68,9 @@ export default {
       return [table1, table2]
     },
   },
+  created() {
+    document.title = "Transliteration | Yidict"
+  },
 }
 </script>
 

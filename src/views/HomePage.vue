@@ -12,6 +12,9 @@ export default {
   components: {
     SearchForm,
   },
+  created() {
+    document.title = "Yidict"
+  },
 }
 </script>
 <style scoped>

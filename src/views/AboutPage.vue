@@ -57,19 +57,12 @@ export default {
   methods: {
     async fetchNumberOfEntries() {
       let response = await fetch("/.netlify/functions/get-number-of-entries").then((response) => response.json())
-      // return response.entries
       this.numberOfEntries = response.entries
-      // this.searchResults = response
     },
   },
-  // computed: {
-  //   numberOfEntries() {
-  //     let entries = this.fetchNumberOfEntries()
-  //     return entries
-  //   },
-  // },
   created() {
     this.fetchNumberOfEntries()
+    document.title = "About | Yidict"
   },
 }
 </script>

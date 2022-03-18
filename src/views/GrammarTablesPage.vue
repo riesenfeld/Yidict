@@ -94,6 +94,9 @@ export default {
       return this.grammarTables.filter((table) => table.name == name)[0].table
     },
   },
+  created() {
+    document.title = "Grammar Tables | Yidict"
+  },
 }
 </script>
 

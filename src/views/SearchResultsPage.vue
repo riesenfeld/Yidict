@@ -53,6 +53,9 @@ export default {
       } else this.fetchResults(to.query.term, to.query.type, "true")
     },
   },
+  created() {
+    document.title = "Search | Yidict"
+  },
 }
 </script>
 

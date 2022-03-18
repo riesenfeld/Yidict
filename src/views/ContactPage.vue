@@ -53,6 +53,9 @@ export default {
       } else return "none"
     },
   },
+  created() {
+    document.title = "Contact | Yidict"
+  },
 }
 </script>
 
