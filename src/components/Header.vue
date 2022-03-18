@@ -1,5 +1,5 @@
 <template>
-  <header id="header">
+  <header id="header" ref="header">
     <router-link to="/" class="router-link router-link-home">
       <div class="logo-area">
         <!-- logo source: https://icons8.com/icon/25546/peacock -->
@@ -38,7 +38,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 10vh;
+  height: max(10vh, 52px);
   background-color: var(--main-color);
   color: white;
 }
@@ -74,24 +74,24 @@ export default {
 
 @media (max-width: 600px) {
   #header {
-    height: 6vh;
+    height: 60px;
   }
   .logo-area {
-    font-size: min(3.5vh, 2rem);
+    font-size: min(8vw, 1.8rem);
   }
   #logo-image {
-    height: min(5.5vh, 50px);
-    width: min(5.5vh, 50px);
+    height: 55px;
+    width: 55px;
   }
   .site-name {
     margin-left: 4vw;
   }
   .menu-button {
-    height: 4.5vh;
-    width: 4.5vh;
+    height: 45px;
+    width: 45px;
   }
   .menu-icon {
-    height: 4.5vh;
+    height: 45px;
   }
 }
 </style>
