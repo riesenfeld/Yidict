@@ -62,8 +62,10 @@ export default {
       ],
     }
   },
-  created() {
-    document.title = "Usage Guide | Yidict"
+  metaInfo: {
+    title: "Usage Guide | Yidict",
+    meta: [{ name: "description", content: "How to use Yidict, a free Yiddish-English dictionary on the web." }],
+    link: [{rel: "canonical", href: "https://yiddishdictionary.net/usage"}]
   },
 }
 </script>

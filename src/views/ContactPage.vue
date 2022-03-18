@@ -53,8 +53,10 @@ export default {
       } else return "none"
     },
   },
-  created() {
-    document.title = "Contact | Yidict"
+  metaInfo: {
+    title: "Contact | Yidict",
+    meta: [{ name: "description", content: "Have a question or comment about Yidict? Get in touch!" }],
+    link: [{ rel: "canonical", href: "https://yiddishdictionary.net/contact" }],
   },
 }
 </script>

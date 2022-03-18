@@ -94,8 +94,15 @@ export default {
       return this.grammarTables.filter((table) => table.name == name)[0].table
     },
   },
-  created() {
-    document.title = "Grammar Tables | Yidict"
+  metaInfo: {
+    title: "Grammar Tables | Yidict",
+    meta: [
+      {
+        name: "description",
+        content: "Grammar tables from Yidict, a free Yiddish-English dictionary on the web.",
+        link: [{ rel: "canonical", href: "https://yiddishdictionary.net/grammar" }],
+      },
+    ],
   },
 }
 </script>

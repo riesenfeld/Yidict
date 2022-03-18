@@ -12,8 +12,10 @@ export default {
   components: {
     SearchForm,
   },
-  created() {
-    document.title = "Yidict"
+  metaInfo: {
+    title: "Yidict",
+    meta: [{ name: "description", content: "A free Yiddish-English dictionary for the web." }],
+    link: [{ rel: "canonical", href: "https://yiddishdictionary.net" }],
   },
 }
 </script>

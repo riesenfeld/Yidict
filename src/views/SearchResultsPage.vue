@@ -53,8 +53,10 @@ export default {
       } else this.fetchResults(to.query.term, to.query.type, "true")
     },
   },
-  created() {
-    document.title = "Search | Yidict"
+  metaInfo: {
+    title: "Search | Yidict",
+    meta: [{ name: "description", content: "Search Yidict, a free Yiddish-English dictionary on the web." }],
+    link: [{ rel: "canonical", href: "https://yiddishdictionary.net/search" }],
   },
 }
 </script>

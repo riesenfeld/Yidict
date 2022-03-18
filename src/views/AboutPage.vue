@@ -62,7 +62,11 @@ export default {
   },
   created() {
     this.fetchNumberOfEntries()
-    document.title = "About | Yidict"
+  },
+  metaInfo: {
+    title: "About | Yidict",
+    meta: [{ name: "description", content: "About Yidict, a free Yiddish-English dictionary on the web." }],
+    link: [{ rel: "canonical", href: "https://yiddishdictionary.net/about" }],
   },
 }
 </script>

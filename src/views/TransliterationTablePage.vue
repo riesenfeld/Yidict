@@ -68,8 +68,15 @@ export default {
       return [table1, table2]
     },
   },
-  created() {
-    document.title = "Transliteration | Yidict"
+  metaInfo: {
+    title: "Transliteration | Yidict",
+    meta: [
+      {
+        name: "description",
+        content: "Transliteration guide for Yidict, a free Yiddish-English dictionary on the web.",
+        link: [{ rel: "canonical", href: "https://yiddishdictionary.net/transliteration" }],
+      },
+    ],
   },
 }
 </script>
