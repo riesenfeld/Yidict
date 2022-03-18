@@ -84,7 +84,7 @@ export default {
 
 @media (max-width: 600px) {
   .menu.active {
-    top: 6vh;
+    top: 60px;
   }
 }
 </style>
