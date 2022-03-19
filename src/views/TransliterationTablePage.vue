@@ -74,9 +74,18 @@ export default {
       {
         name: "description",
         content: "Transliteration guide for Yidict, a free Yiddish-English dictionary on the web.",
-        link: [{ rel: "canonical", href: "https://yiddishdictionary.net/transliteration" }],
+      },
+      { property: "og:title", content: "Transliteration | Yidict" },
+      {
+        property: "og:url",
+        content: "https://yiddishdictionary.net/transliteration",
+      },
+      {
+        property: "og:description",
+        content: "Transliteration guide for Yidict, a free Yiddish-English dictionary on the web.",
       },
     ],
+    link: [{ rel: "canonical", href: "https://yiddishdictionary.net/transliteration" }],
   },
 }
 </script>

@@ -100,9 +100,18 @@ export default {
       {
         name: "description",
         content: "Grammar tables from Yidict, a free Yiddish-English dictionary on the web.",
-        link: [{ rel: "canonical", href: "https://yiddishdictionary.net/grammar" }],
+      },
+      { property: "og:title", content: "Grammar Tables | Yidict" },
+      {
+        property: "og:url",
+        content: "https://yiddishdictionary.net/grammar",
+      },
+      {
+        property: "og:description",
+        content: "Grammar tables from Yidict, a free Yiddish-English dictionary on the web.",
       },
     ],
+    link: [{ rel: "canonical", href: "https://yiddishdictionary.net/grammar" }],
   },
 }
 </script>

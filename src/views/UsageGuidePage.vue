@@ -64,7 +64,18 @@ export default {
   },
   metaInfo: {
     title: "Usage Guide | Yidict",
-    meta: [{ name: "description", content: "How to use Yidict, a free Yiddish-English dictionary on the web." }],
+    meta: [
+      { name: "description", content: "How to use Yidict, a free Yiddish-English dictionary on the web." },
+      { property: "og:title", content: "Usage Guide | Yidict" },
+      {
+        property: "og:url",
+        content: "https://yiddishdictionary.net/usage",
+      },
+      {
+        property: "og:description",
+        content: "How to use Yidict, a free Yiddish-English dictionary on the web.",
+      },
+    ],
     link: [{rel: "canonical", href: "https://yiddishdictionary.net/usage"}]
   },
 }

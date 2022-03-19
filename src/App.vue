@@ -36,6 +36,35 @@ export default {
       }
     },
   },
+  metaInfo: {
+    meta: [
+      { property: "og:site_name", content: "Yidict" },
+      {
+        property: "og:image",
+        content: "/site_img.png",
+      },
+      {
+        property: "og:image:secure_url",
+        content: "https://yiddishdictionary.net/site_img.png",
+      },
+      {
+        property: "og:image:type",
+        content: "image/png",
+      },
+      {
+        property: "og:image:alt",
+        content: "A golden peacock with the word Yidict written below in English and Yiddish",
+      },
+      {
+        property: "og:image:width",
+        content: "500",
+      },
+      {
+        property: "og:image:height",
+        content: "500",
+      },
+    ],
+  },
 }
 </script>
 
@@ -49,7 +78,7 @@ export default {
 }
 
 :root {
-  --main-color: rgba(0, 0, 80, 0.9);
+  --main-color: rgba(0, 0, 82, 0.9);
   --shadow-color: rgba(90, 90, 90, 0.5);
 }
 

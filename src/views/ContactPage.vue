@@ -55,7 +55,18 @@ export default {
   },
   metaInfo: {
     title: "Contact | Yidict",
-    meta: [{ name: "description", content: "Have a question or comment about Yidict? Get in touch!" }],
+    meta: [
+      { name: "description", content: "Have a question or comment about Yidict? Get in touch!" },
+      { property: "og:title", content: "Contact | Yidict" },
+      {
+        property: "og:url",
+        content: "https://yiddishdictionary.net/contact",
+      },
+      {
+        property: "og:description",
+        content: "Have a question or comment about Yidict? Get in touch!",
+      },
+    ],
     link: [{ rel: "canonical", href: "https://yiddishdictionary.net/contact" }],
   },
 }

@@ -65,7 +65,21 @@ export default {
   },
   metaInfo: {
     title: "About | Yidict",
-    meta: [{ name: "description", content: "About Yidict, a free Yiddish-English dictionary on the web." }],
+    meta: [
+      {
+        name: "description",
+        content: "About Yidict, a free Yiddish-English dictionary on the web.",
+      },
+      { property: "og:title", content: "About | Yidict" },
+      {
+        property: "og:url",
+        content: "https://yiddishdictionary.net/about",
+      },
+      {
+        property: "og:description",
+        content: "About Yidict, a free Yiddish-English dictionary on the web.",
+      },
+    ],
     link: [{ rel: "canonical", href: "https://yiddishdictionary.net/about" }],
   },
 }
