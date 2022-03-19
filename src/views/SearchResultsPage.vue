@@ -40,10 +40,11 @@ export default {
       this.searchResults = null
     },
     isValidLookup(type, term) {
-      if (type != "english" || type != "yiddish" || type != "romanization" || type == undefined) {
+      if ((type != "english" && type != "yiddish" && type != "romanization") || type == undefined) {
         return false
       }
       if (term == "" || term == undefined) {
+        console.log(`here1`)
         return false
       }
       return true
