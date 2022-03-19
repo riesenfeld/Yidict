@@ -5,6 +5,7 @@
     <p v-if="searchResults != null && searchResults.length == 0" class="no-matches-found-message">
       No matches found
     </p>
+    <p v-if="isLoading">Loading...</p>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ export default {
   data() {
     return {
       searchResults: null,
+      isLoading: false,
     }
   },
   methods: {
@@ -33,6 +35,8 @@ export default {
         method: "POST",
         body: requestBody,
       }).then((response) => response.json())
+
+      this.toggleLoadingAnimation()
 
       this.searchResults = response
     },
@@ -49,9 +53,13 @@ export default {
       }
       return true
     },
+    toggleLoadingAnimation() {
+      this.isLoading = !this.isLoading
+    },
   },
   mounted() {
     if (this.isValidLookup(this.$route.query.type, this.$route.query.term)) {
+      this.toggleLoadingAnimation()
       if (this.$route.query.exact == undefined || this.$route.query.exact == false) {
         this.fetchResults(this.$route.query.term, this.$route.query.type, "false")
       } else this.fetchResults(this.$route.query.term, this.$route.query.type, "true")
@@ -61,6 +69,7 @@ export default {
     $route(to) {
       this.clearPage()
       if (this.isValidLookup(this.$route.query.type, this.$route.query.term)) {
+        this.toggleLoadingAnimation()
         if (to.query.exact == undefined || to.query.exact == false) {
           this.fetchResults(to.query.term, to.query.type, "false")
         } else this.fetchResults(to.query.term, to.query.type, "true")
