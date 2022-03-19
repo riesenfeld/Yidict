@@ -39,18 +39,31 @@ export default {
     clearPage() {
       this.searchResults = null
     },
+    isValidLookup(type, term) {
+      if (type != "english" || type != "yiddish" || type != "romanization" || type == undefined) {
+        return false
+      }
+      if (term == "" || term == undefined) {
+        return false
+      }
+      return true
+    },
   },
   mounted() {
-    if (this.$route.query.exact == undefined || this.$route.query.exact == false) {
-      this.fetchResults(this.$route.query.term, this.$route.query.type, "false")
-    } else this.fetchResults(this.$route.query.term, this.$route.query.type, "true")
+    if (this.isValidLookup(this.$route.query.type, this.$route.query.term)) {
+      if (this.$route.query.exact == undefined || this.$route.query.exact == false) {
+        this.fetchResults(this.$route.query.term, this.$route.query.type, "false")
+      } else this.fetchResults(this.$route.query.term, this.$route.query.type, "true")
+    }
   },
   watch: {
     $route(to) {
       this.clearPage()
-      if (to.query.exact == undefined || to.query.exact == false) {
-        this.fetchResults(to.query.term, to.query.type, "false")
-      } else this.fetchResults(to.query.term, to.query.type, "true")
+      if (this.isValidLookup(this.$route.query.type, this.$route.query.term)) {
+        if (to.query.exact == undefined || to.query.exact == false) {
+          this.fetchResults(to.query.term, to.query.type, "false")
+        } else this.fetchResults(to.query.term, to.query.type, "true")
+      }
     },
   },
   metaInfo: {
