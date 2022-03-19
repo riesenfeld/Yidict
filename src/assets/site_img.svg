@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg844"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="site_img.svg"
+   inkscape:export-filename="C:\Users\aronr\workspace\yidict2\src\assets\site_img.png"
+   inkscape:export-xdpi="127"
+   inkscape:export-ydpi="127"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview846"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.94554764"
+     inkscape:cx="240.07252"
+     inkscape:cy="135.37129"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs841" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000050;fill-opacity:1;stroke:#ff0000;stroke-width:0;stroke-linecap:round;paint-order:stroke fill markers"
+       id="rect944"
+       width="100"
+       height="100"
+       x="5e-07"
+       y="5e-07" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="text">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.70277px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       x="10.922313"
+       y="88.143364"
+       id="text2419"><tspan
+         sodipodi:role="line"
+         id="tspan2417"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="10.922313"
+         y="88.143364">Yidict | ייִדיקט</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="logo">
+    <g
+       fill="#ffd233"
+       id="g6"
+       style="mix-blend-mode:normal;fill:#ffd233;fill-opacity:1"
+       transform="matrix(0.30260828,0,0,0.30925286,21.313196,12.510649)">
+      <path
+         d="m 144.48,3.44 c -1.89888,0 -3.44,1.54112 -3.44,3.44 0,1.89888 3.44,10.32 3.44,10.32 0,0 3.44,-8.42112 3.44,-10.32 0,-1.89888 -1.54112,-3.44 -3.44,-3.44 z m 1.6864,13.74656 c -5.11117,-0.13714 -9.81125,2.08593 -12.49015,6.7725 -3.17856,5.56592 -2.73722,12.59981 -1.61922,18.67141 2.08808,11.33824 5.20999,22.57043 7.80719,33.80203 -2.81736,-1.08016 -5.72222,-1.93752 -8.68062,-2.5464 -1.78192,-0.36464 -3.76352,-0.86425 -5.58328,-0.82641 -1.62368,0.0344 -1.87443,0.4164 -2.88235,1.71328 -3.30584,4.25184 -5.37193,9.48371 -7.22265,14.49235 -4.816,13.05136 -8.03396,26.64183 -13.12172,39.60031 22.2912,4.31376 55.55998,3.2989 64.19094,-22.5011 4.71968,-14.24848 0.99265,-31.52782 -6.10063,-44.42438 -3.04096,-5.52808 -7.35724,-10.48662 -9.6414,-16.42062 -0.78088,-2.03304 -0.41635,-2.41241 1.43781,-3.39969 1.44136,-0.76712 3.12567,-1.35778 4.78375,-1.18922 2.56624,0.26144 6.84173,2.17531 7.04125,-2.34485 0.13416,-3.01688 -2.88546,-6.26886 -3.75578,-9.12406 -1.8404,-6.03032 -5.24121,-11.02783 -11.95266,-12.07359 -0.74218,-0.11567 -1.4803,-0.18197 -2.21047,-0.20156 z m -30.79203,56.12172 c -6.3296,0.8944 -13.0341,3.26585 -19.6389,8.11625 C 89.47467,86.03413 84.0048,93.9464 79.98,99.76 c -0.8944,1.3072 -1.72242,2.50798 -2.47922,3.57437 -8.944,12.3152 -14.89547,9.56858 -21.77547,6.36938 -4.7816,-2.236 -10.7621,-5.02643 -16.2661,0.16797 -1.4104,1.3416 -2.61574,1.30881 -5.67734,0.79281 -3.268,-0.5848 -7.74403,-1.34053 -11.87203,2.82187 -2.2016,2.2016 -3.29864,4.47388 -3.88344,6.22828 -6.192,0.7912 -14.58641,4.2992 -14.58641,13.7936 0,15.652 13.17493,20.32556 19.50453,22.56156 0.7568,0.2752 1.65335,0.5856 2.20375,0.8264 4.3688,8.2216 9.83706,8.22375 16.68266,8.22375 8.1528,0 28.45041,-1.85599 41.21281,-18.98719 3.9904,-5.3664 9.76423,-14.41521 12.55062,-18.85281 0,0 0.0059,-0.0328 0.04031,-0.0672 2.924,-7.3616 5.39919,-15.34401 7.80719,-23.15281 3.7496,-12.1776 7.1165,-23.14932 11.9325,-30.75172 z M 137.6,136.33015 c -2.2016,0.4128 -4.5064,0.72079 -6.88,0.92719 v 14.10265 h 6.88 z m -20.64,1.13548 V 151.36 h 6.88 V 137.6 c -0.5504,0.0344 -1.10241,0.0336 -1.65281,0.0336 -1.72,0 -3.47279,-0.0304 -5.22719,-0.16797 z"
+         id="path4"
+         style="fill:#ffd233;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
