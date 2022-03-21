@@ -7,11 +7,6 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "HomePage",
-    component: HomePage,
-  },
-  {
     path: "/search",
     name: "SearchResultsPage",
     component: SearchResultsPage,
@@ -43,6 +38,11 @@ const routes = [
     path: "/contact/:submissionStatus?",
     name: "ContactPage",
     component: () => import("@/views/ContactPage"),
+  },
+  {
+    path: "/*",
+    name: "HomePage",
+    component: HomePage,
   },
 ]
 
