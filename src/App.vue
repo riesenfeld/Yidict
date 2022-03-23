@@ -36,6 +36,40 @@ export default {
       }
     },
   },
+  metaInfo: {
+    meta: [
+      { property: "og:type", content: "website" },
+      {
+        property: "og:site_name",
+        content: "Yidict",
+      },
+      {
+        property: "og:image",
+        content: "https://yiddishdictionary.net/preview_img_1200x630.png",
+      },
+      {
+        property: "og:image:secure_url",
+        content: "https://yiddishdictionary.net/preview_img_1200x630.png",
+      },
+      {
+        property: "og:image:type",
+        content: "image/png",
+      },
+      {
+        property: "og:image:alt",
+        // Leave this empty for accessibility
+        content: "",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+    ],
+  },
 }
 </script>
 
