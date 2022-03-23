@@ -3,7 +3,7 @@
     <router-link to="/" class="router-link router-link-home">
       <div class="logo-area">
         <!-- logo source: https://icons8.com/icon/25546/peacock -->
-        <img src="@/assets/logo.svg" id="logo-image" alt="golden peacock logo" />
+        <img src="@/assets/logo.svg" id="logo-image" alt="" />
         <span class="site-name"><span>Yidict</span> | <span>ייִדיקט</span></span>
       </div>
     </router-link>
