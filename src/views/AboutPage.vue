@@ -63,6 +63,13 @@ export default {
   created() {
     this.fetchNumberOfEntries()
   },
+  mounted() {
+    /* Tell Netlify to consider the page fully rendered, so that metaInfo gets prerendered,
+     * as per https://answers.netlify.com/t/support-guide-understanding-and-debugging-prerendering/150
+     * and https://docs.prerender.io/docs/11-best-practices
+     */
+    window.prerenderReady = true
+  },
   metaInfo: {
     title: "About | Yidict",
     meta: [

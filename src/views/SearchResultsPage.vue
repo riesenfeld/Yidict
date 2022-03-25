@@ -88,6 +88,11 @@ export default {
         this.fetchResults(this.$route.query.term, this.$route.query.type, "false")
       } else this.fetchResults(this.$route.query.term, this.$route.query.type, "true")
     }
+    /* Tell Netlify to consider the page fully rendered, so that metaInfo gets prerendered,
+     * as per https://answers.netlify.com/t/support-guide-understanding-and-debugging-prerendering/150
+     * and https://docs.prerender.io/docs/11-best-practices
+     */
+    window.prerenderReady = true
   },
   watch: {
     $route(to) {
