@@ -86,6 +86,18 @@ export default {
         property: "og:description",
         content: "About Yidict, a free Yiddish-English dictionary on the web.",
       },
+      {
+        property: "twitter:url",
+        content: "https://yiddishdictionary.net/about",
+      },
+      {
+        property: "twitter:title",
+        content: "About | Yidict",
+      },
+      {
+        property: "twitter:description",
+        content: "About Yidict, a free Yiddish-English dictionary on the web.",
+      },
     ],
     link: [{ rel: "canonical", href: "https://yiddishdictionary.net/about" }],
   },

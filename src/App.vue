@@ -68,6 +68,18 @@ export default {
         property: "og:image:height",
         content: "630",
       },
+      {
+        property: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        property: "twitter:image",
+        content: "https://yiddishdictionary.net/preview_img_1200x630.png",
+      },
+      {
+        property: "twitter:image:alt",
+        content: "",
+      },
     ],
   },
 }

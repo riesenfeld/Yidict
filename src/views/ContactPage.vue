@@ -73,6 +73,18 @@ export default {
         property: "og:description",
         content: "Have a question or comment about Yidict? Get in touch!",
       },
+      {
+        property: "twitter:url",
+        content: "https://yiddishdictionary.net/contact",
+      },
+      {
+        property: "twitter:title",
+        content: "Contact | Yidict",
+      },
+      {
+        property: "twitter:description",
+        content: "Have a question or comment about Yidict? Get in touch!",
+      },
     ],
     link: [{ rel: "canonical", href: "https://yiddishdictionary.net/contact" }],
   },

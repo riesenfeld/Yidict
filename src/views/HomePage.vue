@@ -22,7 +22,7 @@ export default {
   metaInfo: {
     title: "Yidict",
     meta: [
-      { name: "description", content: "A free Yiddish-English dictionary for the web." },
+      { name: "description", content: "A free Yiddish-English dictionary on the web." },
       { property: "og:title", content: "Yidict" },
       {
         property: "og:url",
@@ -30,7 +30,19 @@ export default {
       },
       {
         property: "og:description",
-        content: "A free Yiddish-English dictionary for the web.",
+        content: "A free Yiddish-English dictionary on the web.",
+      },
+      {
+        property: "twitter:url",
+        content: "https://yiddishdictionary.net",
+      },
+      {
+        property: "twitter:title",
+        content: "Yidict",
+      },
+      {
+        property: "twitter:description",
+        content: "A free Yiddish-English dictionary on the web.",
       },
     ],
     link: [{ rel: "canonical", href: "https://yiddishdictionary.net" }],
