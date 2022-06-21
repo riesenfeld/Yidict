@@ -1,12 +1,11 @@
 <template>
-  <div id="result-card" class="result-card">
+  <div class="result-card" tabindex="0">
     <div
       v-for="(element, index) in result"
       :key="index"
       class="result-element"
       :style="gridItemPosition(index)"
       :data-category="dataCategories[index]"
-      :aria-label="ariaLabels[index]"
       :lang="chooseLangAttribute(index)"
       :dir="index == 1 ? 'auto' : 'ltr'"
     >
@@ -27,13 +26,13 @@ export default {
   },
   data() {
     return {
-      ariaLabels: [
-        "English",
-        "Yiddish",
-        "Transliteration",
-        "Additional pronunciation information",
-        "Part of speech",
-      ],
+      // ariaLabels: [
+      //   "English",
+      //   "Yiddish",
+      //   "Transliteration",
+      //   "Additional pronunciation information",
+      //   "Part of speech",
+      // ],
       dataCategories: ["english", "yiddish", "transliteration", "pronunciation", "partofspeech"],
     }
   },
@@ -110,7 +109,7 @@ export default {
 </script>
 
 <style scoped>
-#result-card {
+.result-card {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(6, 1fr);
@@ -132,12 +131,12 @@ export default {
 }
 
 @media (orientation: portrait) and (max-width: 800px) {
-  #result-card {
+  .result-card {
     font-size: 0.8rem;
   }
 }
 @media (orientation: portrait) and (max-width: 350px) {
-  #result-card {
+  .result-card {
     font-size: 0.6rem;
   }
 }

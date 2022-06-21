@@ -1,7 +1,7 @@
 <template>
-  <div id="search-results">
+  <main id="search-results">
     <SearchForm />
-    <div class="message-area">
+    <div class="message-area" role="status">
       <p v-if="searchResults != null && searchResults.length == 0" class="no-matches-found-message">
         No matches found
       </p>
@@ -12,7 +12,7 @@
       <p v-else-if="isLoading">Loading...</p>
     </div>
     <ResultCard v-for="(result, index) in searchResults" :key="index" :result="result"></ResultCard>
-  </div>
+  </main>
 </template>
 
 <script>
