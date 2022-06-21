@@ -1,5 +1,5 @@
 <template>
-  <div id="transliteration-table-page">
+  <main id="transliteration-table-page">
     <section class="explanation">
       <h3>YIVO Transliteration</h3>
       <p>
@@ -29,7 +29,7 @@
       <h3 class="table-title">{{ alternatives.title }}</h3>
       <Table :tableData="alternatives" />
     </section>
-  </div>
+  </main>
 </template>
 
 <script>

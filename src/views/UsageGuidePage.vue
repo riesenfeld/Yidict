@@ -1,5 +1,5 @@
 <template>
-  <div id="usage-guide-page">
+  <main id="usage-guide-page">
     <section>
       <h3>Searching the dictionary</h3>
       <p>A dictionary lookup may be performed against three different types of search terms:
@@ -41,7 +41,7 @@
         or where accents fall in a Yiddish word, followed by the word's part-of-speech.
       </p>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>

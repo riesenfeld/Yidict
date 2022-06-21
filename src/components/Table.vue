@@ -1,5 +1,5 @@
 <template>
-  <div id="table" class="table" :style="gridFromData">
+  <div class="table" :style="gridFromData">
     <div
       v-for="(element, index) in flattenedData"
       :key="index"
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style scoped>
-#table {
+.table {
   max-width: 90vw;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
