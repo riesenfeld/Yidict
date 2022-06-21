@@ -1,7 +1,7 @@
 <template>
-  <div id="home">
+  <main id="home">
     <SearchForm />
-  </div>
+  </main>
 </template>
 
 <script>
