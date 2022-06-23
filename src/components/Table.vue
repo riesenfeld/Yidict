@@ -38,12 +38,12 @@ export default {
 .table {
   max-width: 90vw;
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 0.5px solid black;
 }
 
 table th,
 table td {
-  border: 1px solid black;
+  border: 0.5px solid black;
   padding: 2px;
 }
 
