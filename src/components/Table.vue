@@ -1,53 +1,37 @@
 <template>
-  <div class="table" :style="gridFromData">
-    <div
-      v-for="(element, index) in flattenedData"
-      :key="index"
-      :class="{
-        'table-element': true,
-        'table-header': index < tableData.columnNames.length,
-        'table-data-element': index >= tableData.columnNames.length,
-      }"
-      :style="tableElementStyles(index)"
-      :data-column="tableData.columnNames[index % tableData.columnNames.length]"
-      v-html="element"
-    ></div>
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th
+          v-for="(cname, index) in tableData.columnNames"
+          :key="index"
+          class="table-header"
+          v-html="cname"
+          scope="col"
+        ></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(row, rowIndex) in tableData.rows" :key="rowIndex">
+        <td
+          v-for="(cell, cellIndex) in tableData.rows[rowIndex]"
+          :key="cellIndex"
+          class="table-data-element"
+          :data-column="tableData.columnNames[cellIndex]"
+          v-html="cell"
+        ></td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <script>
 export default {
-  name: "IndefiniteAndRelativePronounsForPeopleTable",
+  name: "Table",
   props: {
     tableData: Object,
   },
-  methods: {
-    tableElementStyles(index) {
-      let columnPosition = index % this.tableData.columnNames.length
-      let rowPosition = Math.floor(index / this.tableData.columnNames.length)
-      let borderStyle = "1px solid black"
-      let styleObject = {
-        borderTop: "none",
-        borderBottom: "none",
-        borderLeft: "none",
-        borderRight: "none",
-      }
-
-      /* If in not in the bottom row, put a border at the bottom */
-      if (rowPosition < this.tableData.rows.length) {
-        styleObject.borderBottom = borderStyle
-      }
-      /* If not in the rightmost column, put a border on the left */
-      if (columnPosition < this.tableData.columnNames.length - 1) {
-        styleObject.borderRight = borderStyle
-      }
-      return styleObject
-    },
-    /* Wrap the table's top row in <h4> tags */
-    headerize(arr) {
-      return arr.map((el) => "<h4>" + el + "</h4>")
-    },
-  },
+  methods: {},
   computed: {
     flattenedData() {
       let arr = this.headerize(this.tableData.columnNames)
@@ -76,11 +60,19 @@ export default {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-.table-element {
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table th,
+table td {
+  border: 1px solid black;
   padding: 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f9f9;
 }
 </style>

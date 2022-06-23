@@ -161,6 +161,9 @@ export default {
   font-size: 0.8rem;
 }
 .table-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }

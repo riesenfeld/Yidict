@@ -130,6 +130,9 @@ section p {
   margin-bottom: 2vh;
 }
 .table-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
