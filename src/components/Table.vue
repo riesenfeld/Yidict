@@ -31,37 +31,12 @@ export default {
   props: {
     tableData: Object,
   },
-  methods: {},
-  computed: {
-    flattenedData() {
-      let arr = this.headerize(this.tableData.columnNames)
-      for (let i = 0; i < this.tableData.rows.length; i++) {
-        arr = arr.concat(this.tableData.rows[i])
-      }
-      return arr
-    },
-    gridFromData() {
-      let numColumns = this.tableData.columnNames.length
-      return {
-        display: "grid",
-        gridAutoRows: "min-content",
-        gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
-      }
-    },
-  },
 }
 </script>
 
 <style scoped>
 .table {
   max-width: 90vw;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}
-
-table {
   border-collapse: collapse;
   border: 1px solid black;
 }
