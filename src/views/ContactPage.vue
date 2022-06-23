@@ -1,5 +1,5 @@
 <template>
-  <div id="contact-page">
+  <main id="contact-page">
     <section>
       <h3>Contact</h3>
       <p>You may use the form below to get in touch with me regarding any matter.</p>
@@ -33,7 +33,7 @@
         <router-link to="/">Return to home page</router-link>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="about-page">
+  <main id="about-page">
     <section>
       <h3>Attributions</h3>
       <p>
@@ -38,7 +38,7 @@
         <a href="https://verterbukh.org/vb">verterbukh.org</a>.
       </p>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
