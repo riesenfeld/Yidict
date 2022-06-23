@@ -1,5 +1,5 @@
 <template>
-  <div id="grammar-tables-page">
+  <main id="grammar-tables-page">
     <div v-if="$route.params.table == 'all'" class="tables-all-or-one">
       <div class="grammar-tables-nav-header">
         <h3>Click a link below to scroll down to a table</h3>
@@ -54,7 +54,7 @@
         <Table v-if="$route.params.table != undefined" :tableData="getTableByName($route.params.table)" />
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
