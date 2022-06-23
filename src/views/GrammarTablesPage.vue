@@ -13,7 +13,7 @@
           <span>)</span>
         </span>
       </div>
-      <nav class="grammar-tables-nav">
+      <nav class="grammar-tables-nav" role="navigation" aria-label="Grammar table selection">
         <a
           v-for="(table, index) in grammarTables"
           :key="index"

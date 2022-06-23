@@ -1,5 +1,5 @@
 <template>
-  <nav id="side-bar" :class="{ menu: true, active: menuIsOpen }">
+  <nav id="side-bar" :class="{ menu: true, active: menuIsOpen }" role="navigation" aria-label="Main">
     <div :class="{ 'menu-links': true, active: menuIsOpen }">
       <router-link
         to="/"
