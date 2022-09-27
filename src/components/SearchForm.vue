@@ -6,15 +6,15 @@
     </div>
     <div class="form-flex-item">
       <input type="radio" id="english" value="english" v-model="searchType" />
-      <label for="english"> Search for a word in English</label>
+      <label for="english"> English to Yiddish </label>
     </div>
     <div class="form-flex-item">
       <input type="radio" id="yiddish" value="yiddish" v-model="searchType" />
-      <label for="yiddish"> Search for a word in Yiddish</label>
+      <label for="yiddish"> Yiddish to English (using Yiddish characters) </label>
     </div>
     <div class="form-flex-item">
       <input type="radio" id="romanization" value="romanization" v-model="searchType" />
-      <label for="romanization"> Search for a word using YIVO standard romanization </label>
+      <label for="romanization"> Yiddish to English (using English characters) </label>
     </div>
     <div class="form-flex-item">
       <input type="checkbox" id="mode-checkbox" v-model="exactMode" />
