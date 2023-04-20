@@ -8,7 +8,7 @@
       </div>
     </router-link>
     <button class="menu-button" @click="toggleMenu">
-      <img src="@/assets/menu.svg" class="menu-icon" alt="menu icon" />
+      <img src="@/assets/menu.svg" class="menu-icon" alt="menu icon" :class="{ active: menuIsOpen }" />
     </button>
   </header>
 </template>
@@ -70,6 +70,14 @@ export default {
 }
 .menu-icon {
   height: 7.5vh;
+}
+
+.menu-button > img {
+  transition: transform 0.2s;
+}
+
+.active {
+  transform: scale(0.6) rotate(90deg);
 }
 
 @media (max-width: 600px) {
